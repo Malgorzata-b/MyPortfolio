@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: #244b34ff;
+  --dark: #1b1b1b;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 38rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 2rem;
+  justify-content: space-between;
+  background-image: url(/Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#Information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-image: url(/Img5.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 120rem;
+  width: 100%;
+}
+
+#Contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 2rem; */
+  padding: 2rem;
+  width: 100%;
+  height: 15rem;
+  background: linear-gradient(to right top, var(--dark), var(--green));
+  /* background-color: #244b34ff; */
+
+  backdrop-filter: blur(10px);
+  /* background-image: url(/Img5.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; */
+}
