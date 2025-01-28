@@ -1,73 +1,182 @@
-import "./About.css";
+import Image3 from "/Image1.jpg";
+import Image2 from "/Image2.jpg";
+import Image1 from "/Image3.jpg";
+import Image4 from "/Image4.jpg";
+import IconHTML from "/iconHTML.png";
+import IconCSS from "/iconCSS.png";
+import IconFigma from "/iconFigma.png";
+import IconJS from "/iconJS.png";
+import IconReact from "/iconReact.png";
+import IconPython from "/iconPython.png";
+import IconMySQL from "/iconMySQL.png";
+
+import styled from "styled-components";
+
+const ImagesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+`;
+
+const ImageContainerProfil = styled.div``;
+
+const ImageAurora = styled.img`
+  width: 8rem;
+  height: 12rem;
+  border: 3px solid var(--black);
+  border-radius: 5%;
+  box-shadow: 0px 4px 4px 2px var(--black);
+`;
+
+const CaruselContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px var(--CaruselColorShadowLight);
+  width: 19rem;
+  padding-top: 1rem;
+  height: 12rem;
+  padding-right: 1rem;
+`;
+
+const ImageContainerImg = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 14.9rem;
+  height: 9rem;
+  padding-left: 1rem;
+  border-radius: 5%;
+  scroll-behavior: smooth;
+  overflow: hidden;
+`;
+
+const Image = styled.img`
+  width: 20rem;
+  height: 9.5rem;
+  border-radius: 5%;
+  box-shadow: 4px 4px 8px var(--CaruselColorShadowLight);
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  width: 5rem;
+  padding-top: 0.5rem;
+`;
+
+const LinkButton = styled.a`
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px var(--CaruselColorShadowDark),
+    inset 1px 1px 2px var(--CaruselColorShadowLightSecond);
+  background-color: var(--CaruselColorBackground);
+  background-image: linear-gradient(
+    var(--CaruselColorBackgroundImageLight),
+    var(--CaruselColorBackgroundImageDark)
+  );
+`;
+
+const CompetencesContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
+const Paragraph = styled.p``;
+
+const IconContainer = styled.div``;
+
+const IconImage = styled.img`
+  width: 1.5rem;
+  height: 1.8rem;
+`;
+
+const IconTitle = styled.p`
+  font-weight: 300;
+  font-size: 9px;
+`;
+
+const AboutMeContainer = styled.div`
+  display: flex;
+  width: 100%;
+  background: linear-gradient(to right top, var(--dark), var(--green));
+  border-radius: 5%;
+  height: 32rem;
+  box-shadow: 0px 0px 15px 6px var(--black);
+`;
+
+const Description = styled.p`
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+  width: 95%;
+  text-indent: 30px;
+  padding-left: 2rem;
+`;
 
 export default function About() {
   return (
-    <section className="About-container">
-      <div className="Images-Container">
-        <div className="Image">
-          <img className="Profil" src="public/Image4.jpg" alt="Aurora" />
-        </div>
-        <div class="carousel-container">
-          <div className="Image-Gallery">
-            <img
-              className="Photo"
-              id="photo-1"
-              src="public/Image3.jpg"
-              alt="Image3"
-            />
-            <img
-              className="Photo"
-              id="photo-2"
-              src="public/Image2.jpg"
-              alt="Image2"
-            />
-            <img
-              className="Photo"
-              id="photo-3"
-              src="public/Image1.jpg"
-              alt="Image1"
-            />
-          </div>
-          <div class="button-container">
-            <a class="button" href="#photo-1"></a>
-            <a class="button" href="#photo-2"></a>
-            <a class="button" href="#photo-3"></a>
-          </div>
-        </div>
-        <div className="Competences">
-          <p>Jeg Kan: </p>
-          <div className="HTML">
-            <img className="Icon" src="public/iconHTML.png" alt="HTML" />
-            <p id="Title-competences">HTML</p>
-          </div>
-          <div className="CSS ">
-            <img className="Icon" src="public/iconCSS.png" alt="CSS" />
-            <p id="Title-competences">CSS</p>
-          </div>
-          <div className="FIGMA">
-            <img className="Icon" src="public/iconFigma.png" alt="FIGMA" />
-            <p id="Title-competences">Figma</p>
-          </div>
-          <div className="JS">
-            <img className="Icon" src="public/iconJS.png" alt="JS" />
-            <p id="Title-competences">JavaScript</p>
-          </div>
-          <div className="REACT">
-            <img className="Icon" src="public/iconReact.png" alt="REACT" />
-            <p id="Title-competences">React</p>
-          </div>
-          <div className="Python ">
-            <img className="Icon" src="public/iconPython.png" alt="Python" />
-            <p id="Title-competences">Python</p>
-          </div>
-          <div className="MySQL">
-            <img className="Icon" src="public/iconMySQL.png" alt="MySQL" />
-            <p id="Title-competences">MySQL</p>
-          </div>
-        </div>
-      </div>
-      <div className="AboutMe">
-        <p className="Description">
+    <>
+      <ImagesContainer className="Images-Container">
+        <ImageContainerProfil className="Image">
+          <ImageAurora className="Profil" src={Image4} alt="Aurora" />
+        </ImageContainerProfil>
+        <CaruselContainer class="carousel-container">
+          <ImageContainerImg className="Image-Gallery">
+            <Image className="Photo" id="photo-1" src={Image1} alt="Image3" />
+            <Image className="Photo" id="photo-2" src={Image2} alt="Image2" />
+            <Image className="Photo" id="photo-3" src={Image3} alt="Image1" />
+          </ImageContainerImg>
+          <ButtonContainer class="button-container">
+            <LinkButton class="button" href="#photo-1"></LinkButton>
+            <LinkButton class="button" href="#photo-2"></LinkButton>
+            <LinkButton class="button" href="#photo-3"></LinkButton>
+          </ButtonContainer>
+        </CaruselContainer>
+        <CompetencesContainer className="Competences">
+          <Paragraph>Jeg Kan: </Paragraph>
+          <IconContainer className="HTML">
+            <IconImage className="Icon" src={IconHTML} alt="HTML" />
+            <IconTitle id="Title-competences">HTML</IconTitle>
+          </IconContainer>
+          <IconContainer className="CSS">
+            <IconImage className="Icon" src={IconCSS} alt="CSS" />
+            <IconTitle id="Title-competences">CSS</IconTitle>
+          </IconContainer>
+          <IconContainer className="FIGMA">
+            <IconImage className="Icon" src={IconFigma} alt="FIGMA" />
+            <IconTitle id="Title-competences">Figma</IconTitle>
+          </IconContainer>
+          <IconContainer className="JS">
+            <IconImage className="Icon" src={IconJS} alt="JS" />
+            <IconTitle id="Title-competences">JavaScript</IconTitle>
+          </IconContainer>
+          <IconContainer className="REACT">
+            <IconImage className="Icon" src={IconReact} alt="REACT" />
+            <IconTitle id="Title-competences">React</IconTitle>
+          </IconContainer>
+          <IconContainer className="Python ">
+            <IconImage className="Icon" src={IconPython} alt="Python" />
+            <IconTitle id="Title-competences">Python</IconTitle>
+          </IconContainer>
+          <IconContainer className="MySQL">
+            <IconImage className="Icon" src={IconMySQL} alt="MySQL" />
+            <IconTitle id="Title-competences">MySQL</IconTitle>
+          </IconContainer>
+        </CompetencesContainer>
+      </ImagesContainer>
+      <AboutMeContainer className="AboutMe">
+        <Description className="Description">
           Hei!
           <br />
           Jeg er Malgorzata og jeg er veldig spent på å starte min reise som
@@ -90,8 +199,8 @@ export default function About() {
           er ivrig etter å bidra med mine analytiske og
           programmeringsferdigheter til et dynamisk team og skape en meningsfull
           påvirkning.
-        </p>
-      </div>
-    </section>
+        </Description>
+      </AboutMeContainer>
+    </>
   );
 }
