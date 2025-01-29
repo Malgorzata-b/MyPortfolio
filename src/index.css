@@ -74,7 +74,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+/* @media only screen and (max-width: 1100px) {
   .Navbar-container {
     gap: 1.5rem;
     height: 1.6rem;
@@ -209,4 +209,4 @@ body {
     width: 100%;
     height: auto;
   }
-}
+} */
