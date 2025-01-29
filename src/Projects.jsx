@@ -30,9 +30,11 @@ const ProjectContainer = styled.div`
 
 const ImgProject = styled.img`
   width: 12rem;
-  height: 15rem;
+  height: 12rem;
   border-radius: 10%;
-  padding-left: 0.5rem;
+  border: 2px solid var(--black);
+  margin-left: 0.5rem;
+  box-shadow: 0px 0px 15px 6px var(--black);
 `;
 
 const InformationProjectContainer = styled.div`
@@ -63,6 +65,8 @@ const IconsContainerProject = styled.div`
 const IconImageProject = styled.img`
   width: 1.4rem;
   height: 1.4rem;
+  border: 2px solid black;
+  box-shadow: 0px 0px 15px 3px var(--black);
 `;
 
 const LinksContainerIcons = styled.div`
@@ -78,6 +82,8 @@ const IconsContainerTools = styled.div`
 const GitHubMySQLIcons = styled.img`
   height: 1.4rem;
   width: 2.5rem;
+  border: 2px solid black;
+  box-shadow: 0px 0px 15px 3px var(--black);
 `;
 
 const Link = styled.a``;

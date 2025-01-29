@@ -41,11 +41,6 @@ const InfocontactContainer = styled.div`
   padding: 0.5rem;
 `;
 
-const LinksContainerContact = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
 const LinksContactContainer = styled.div`
   display: flex;
   gap: 1rem;
@@ -56,11 +51,15 @@ const LinksContactContainer = styled.div`
 const IconImageProject = styled.img`
   width: 1.4rem;
   height: 1.4rem;
+  border: 2px solid black;
+  box-shadow: 0px 0px 15px 3px var(--white);
 `;
 
 const GitHubIcons = styled.img`
   height: 1.4rem;
   width: 2.5rem;
+  border: 2px solid black;
+  box-shadow: 0px 0px 15px 1px var(--white);
 `;
 
 const Link = styled.a``;
@@ -80,24 +79,23 @@ export default function Contact() {
           mobiltelefon: <strong>(+47) 486 53 587</strong>
         </ParagraphContact>
       </InfocontactContainer>
-      <LinksContainerContact className="Link-Button">
-        <LinksContactContainer className="Links-Contact">
-          <Link href="https://github.com/Malgorzata-b">
-            <GitHubIcons
-              className="Icons GitHubIcon"
-              src={IconGitHub}
-              alt="GitHub"
-            />
-          </Link>
-          <Link href="https://www.linkedin.com/in/malgorzata-bugajska/">
-            <IconImageProject
-              className="Icons"
-              src={IconLinkedin}
-              alt="Linkedin"
-            />
-          </Link>
-        </LinksContactContainer>
-      </LinksContainerContact>
+
+      <LinksContactContainer className="Links-Contact">
+        <Link href="https://github.com/Malgorzata-b">
+          <GitHubIcons
+            className="Icons GitHubIcon"
+            src={IconGitHub}
+            alt="GitHub"
+          />
+        </Link>
+        <Link href="https://www.linkedin.com/in/malgorzata-bugajska/">
+          <IconImageProject
+            className="Icons"
+            src={IconLinkedin}
+            alt="Linkedin"
+          />
+        </Link>
+      </LinksContactContainer>
     </ContactContainer>
   );
 }

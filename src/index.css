@@ -28,8 +28,8 @@ body {
   font-weight: 300;
   font-style: normal;
   color: var(--white);
-  scroll-behavior: smooth;
   display: flex;
+  height: 100vh;
 }
 
 #HomePage {
@@ -71,5 +71,142 @@ body {
   50% {
     box-shadow: 0px 1px 60px 5px var(--black);
     border: 2px solid var(--black);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Navbar-container {
+    gap: 1.5rem;
+    height: 1.6rem;
+    padding: 1.4rem;
+    margin-right: 8%;
+  }
+  #Information-container {
+    height: auto;
+  }
+  .Description {
+    font-size: 0.9rem;
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .Projects-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+    margin-right: 12rem;
+  }
+
+  #Ønskelister {
+    grid-column: 1;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .Navbar-container {
+    gap: 1.5rem;
+    height: 1.6rem;
+    padding: 1.4rem;
+    margin-right: 11%;
+  }
+
+  .Description {
+    font-size: 0.9rem;
+    height: 23rem;
+    width: 10rem;
+  }
+
+  .AboutMe {
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #HomePage {
+    align-items: center;
+  }
+
+  .Navbar-container {
+    gap: 1.5rem;
+    height: 1.6rem;
+    padding: 1.4rem;
+    margin-right: 35%;
+  }
+
+  #Information-container {
+    height: 150rem;
+  }
+
+  .About-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: -25rem;
+  }
+
+  .Description {
+    margin-left: 10rem;
+    text-align: center;
+    margin-right: 10rem;
+  }
+
+  #Contact {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  #HomePage {
+    align-items: start;
+    justify-content: space-around;
+    padding-left: 9rem;
+  }
+
+  .Button-container {
+    margin-left: 15%;
+  }
+
+  #Title {
+    font-size: 2.6rem;
+  }
+
+  #Name {
+    font-size: 1.5rem;
+  }
+
+  .Welcome-container {
+    margin-left: 3%;
+  }
+
+  .img-dots {
+    margin-bottom: 5%;
+    margin-left: 12%;
+    height: 13rem;
+    width: 16rem;
+  }
+  .Navbar-container {
+    gap: 1.5rem;
+    height: 1.6rem;
+    padding: 1.4rem;
+    margin-right: 52%;
+  }
+  .About-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 40rem;
+    margin-left: -37rem;
+  }
+  .Description {
+    margin-left: 9rem;
+    margin-right: 11rem;
+  }
+
+  .Projects-container {
+    grid-column: 1;
+    gap: 0.4rem;
+    width: 100%;
+    height: auto;
   }
 }

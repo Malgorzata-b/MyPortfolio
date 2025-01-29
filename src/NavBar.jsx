@@ -24,6 +24,8 @@ const NavBarSection = styled.section`
   top: 0;
   z-index: 1;
   height: 2.8rem;
+
+  background: linear-gradient(to right top, var(--dark), var(--green));
 `;
 
 const NavBarNavigation = styled.nav`
@@ -84,8 +86,8 @@ const ProjectsSection = styled.section`
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding-top: 5rem;
-  padding-left: 0.5rem;
-  width: 80%;
+  padding-left: 2.1rem;
+  width: 85%;
   height: 85rem;
   border-radius: 5%;
   backdrop-filter: blur(5px);
