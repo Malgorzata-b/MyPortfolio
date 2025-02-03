@@ -43,11 +43,11 @@ Error generating stack: `+i.message+`
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.5rem;
+  padding: 4vh 16vw;
 `,_f=U.button`
   background-color: transparent;
-  width: 4rem;
-  height: 2rem;
+  width: 8rem;
+  height: 4rem;
   border-radius: 5rem;
   cursor: pointer;
 
@@ -59,6 +59,7 @@ Error generating stack: `+i.message+`
   }
 `,If=U.a`
   color: white;
+  font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
   &:hover {
@@ -67,9 +68,9 @@ Error generating stack: `+i.message+`
   }
 `,pm=U.img`
   position: relative;
-  height: 20rem;
-  top: 25%;
-  left: -3%;
+  height: 40rem;
+  left: -12.5vw;
+  top: 22%;
   animation: rotate 19s infinite linear;
 `,hm=U.div`
   display: flex;
@@ -78,7 +79,8 @@ Error generating stack: `+i.message+`
   align-items: center;
   width: 25rem;
   gap: 2rem;
-  margin-bottom: 3.5rem;
+  margin: 0 15vw;
+  // margin-bottom: 3.5rem;
   backdrop-filter: blur(2px);
   position: relative;
   top: -25%;
@@ -88,10 +90,10 @@ Error generating stack: `+i.message+`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  font-size: 34px;
+  font-size: 3rem;
   font-weight: 600;
 `,gm=U.h1`
-  font-size: 60px;
+  font-size: 6rem;
 `,Qu=U.p``;function ym(){return g.jsxs(g.Fragment,{children:[g.jsxs(dm,{className:"Button-container",children:[g.jsx(_f,{id:"Button-header",children:g.jsx(If,{href:"https://github.com/Malgorzata-b",children:"GitHub"})}),g.jsx(_f,{id:"Button-header",children:g.jsx(If,{href:sh,children:"CV"})})]}),g.jsx(pm,{className:"img-dots",src:ah,alt:"Dots"}),g.jsxs(hm,{className:"Welcome-container",children:[g.jsx(gm,{id:"Title",children:"Velkommen"}),g.jsxs(mm,{id:"Name",children:[g.jsx(Qu,{children:"Jeg heter"}),g.jsx(Qu,{children:"Malgorzata Bugajska"}),g.jsx(Qu,{children:"Fullstack"})]})]})]})}const vm="/MyPortfolio/Image1.jpg",wm="/MyPortfolio/Image2.jpg",km="/MyPortfolio/Image3.jpg",Sm="/MyPortfolio/Image4.jpg",_i="/MyPortfolio/iconHTML.png",Ii="/MyPortfolio/iconCSS.png",ns="/MyPortfolio/iconFigma.png",rs="/MyPortfolio/iconJS.png",td="/MyPortfolio/iconReact.png",xm="/MyPortfolio/iconPython.png",nd="/MyPortfolio/iconMySQL.png",Cm=U.div`
   display: flex;
   flex-direction: column;
@@ -256,8 +258,6 @@ Error generating stack: `+i.message+`
 `,Gm=U.div`
   display: flex;
   gap: 1rem;
-  position: relative;
-  left: 80%;
 `,Km=U.img`
   width: 1.4rem;
   height: 1.4rem;
@@ -269,8 +269,8 @@ Error generating stack: `+i.message+`
   border: 2px solid black;
   box-shadow: 0px 0px 15px 1px var(--white);
 `,Lf=U.a``;function Jm(){return g.jsxs(Hm,{className:"Contact-container",children:[g.jsxs(Vm,{className:"Logo-name",children:[g.jsx(Qm,{id:"Circle"}),g.jsx(Yu,{children:"Malgorzata Bugajska"})]}),g.jsxs(Wm,{className:"Info-Contact",children:[g.jsxs(Yu,{children:["e - post: ",g.jsx("strong",{children:"bugajska.malgorzat5@gmail.com"})]}),g.jsxs(Yu,{children:["mobiltelefon: ",g.jsx("strong",{children:"(+47) 486 53 587"})]})]}),g.jsxs(Gm,{className:"Links-Contact",children:[g.jsx(Lf,{href:"https://github.com/Malgorzata-b",children:g.jsx(Ym,{className:"Icons GitHubIcon",src:Li,alt:"GitHub"})}),g.jsx(Lf,{href:"https://www.linkedin.com/in/malgorzata-bugajska/",children:g.jsx(Km,{className:"Icons",src:Um,alt:"Linkedin"})})]})]})}const Xm=U.header`
-  height: 38rem;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -282,29 +282,27 @@ Error generating stack: `+i.message+`
   align-items: center;
   position: sticky;
   top: 0;
+  height: 10vh;
   z-index: 100;
-  height: 2.8rem;
   background: linear-gradient(to right top, var(--dark), var(--green));
 `,qm=U.nav`
   display: flex;
+  padding: 0 20vw;
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
-  height: 2rem;
-  width: 100%;
-  padding: 2rem;
-  background: linear-gradient(to right top, var(--dark), var(--green));
+  background-color: transparent;
 `,xi=U.button`
   color: var(--white);
   background-color: var(--NavBarButtonBackgroundColor);
-  width: 3.5rem;
-  height: 1.7rem;
+  font-size: 1.5rem;
+  width: 8.5rem;
+  height: 3.5rem;
   border-radius: 5rem;
+  border: 4px solid var(--NavBarButtonBorderColor);
   box-shadow: 1px 4px 4px 0px var(--NavBarButtonShadowColor);
   cursor: pointer;
-  border: 4px solid var(--NavBarButtonBorderColor);
-  width: 6rem;
-  height: 2rem;
+
   &:hover {
     background-color: var(--ShadowButton);
     color: var(--dark);
