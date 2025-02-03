@@ -22,9 +22,8 @@ const NavBarSection = styled.section`
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
   height: 2.8rem;
-
   background: linear-gradient(to right top, var(--dark), var(--green));
 `;
 

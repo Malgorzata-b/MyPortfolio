@@ -28,8 +28,6 @@ body {
   font-weight: 300;
   font-style: normal;
   color: var(--white);
-  display: flex;
-  height: 100vh;
 }
 
 #HomePage {
