@@ -44,8 +44,6 @@ const InfocontactContainer = styled.div`
 const LinksContactContainer = styled.div`
   display: flex;
   gap: 1rem;
-  position: relative;
-  left: 80%;
 `;
 
 const IconImageProject = styled.img`

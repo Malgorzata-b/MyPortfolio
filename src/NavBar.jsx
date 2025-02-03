@@ -7,8 +7,8 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 
 const HeaderSection = styled.header`
-  height: 38rem;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -22,33 +22,31 @@ const NavBarSection = styled.section`
   align-items: center;
   position: sticky;
   top: 0;
+  height: 10vh;
   z-index: 100;
-  height: 2.8rem;
   background: linear-gradient(to right top, var(--dark), var(--green));
 `;
 
 const NavBarNavigation = styled.nav`
   display: flex;
+  padding: 0 20vw;
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
-  height: 2rem;
-  width: 100%;
-  padding: 2rem;
-  background: linear-gradient(to right top, var(--dark), var(--green));
+  background-color: transparent;
 `;
 
 const NavBarButton = styled.button`
   color: var(--white);
   background-color: var(--NavBarButtonBackgroundColor);
-  width: 3.5rem;
-  height: 1.7rem;
+  font-size: 1.5rem;
+  width: 8.5rem;
+  height: 3.5rem;
   border-radius: 5rem;
+  border: 4px solid var(--NavBarButtonBorderColor);
   box-shadow: 1px 4px 4px 0px var(--NavBarButtonShadowColor);
   cursor: pointer;
-  border: 4px solid var(--NavBarButtonBorderColor);
-  width: 6rem;
-  height: 2rem;
+
   &:hover {
     background-color: var(--ShadowButton);
     color: var(--dark);

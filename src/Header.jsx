@@ -8,13 +8,13 @@ const ButtonContainer = styled.div`
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.5rem;
+  padding: 4vh 16vw;
 `;
 
 const ButtonHeader = styled.button`
   background-color: transparent;
-  width: 4rem;
-  height: 2rem;
+  width: 8rem;
+  height: 4rem;
   border-radius: 5rem;
   cursor: pointer;
 
@@ -28,6 +28,7 @@ const ButtonHeader = styled.button`
 
 const LinkGitCV = styled.a`
   color: white;
+  font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
   &:hover {
@@ -38,9 +39,9 @@ const LinkGitCV = styled.a`
 
 const ImageDots = styled.img`
   position: relative;
-  height: 20rem;
-  top: 25%;
-  left: -3%;
+  height: 40rem;
+  left: -12.5vw;
+  top: 22%;
   animation: rotate 19s infinite linear;
 `;
 
@@ -51,7 +52,8 @@ const WelcomeContainer = styled.div`
   align-items: center;
   width: 25rem;
   gap: 2rem;
-  margin-bottom: 3.5rem;
+  margin: 0 15vw;
+  // margin-bottom: 3.5rem;
   backdrop-filter: blur(2px);
   position: relative;
   top: -25%;
@@ -63,12 +65,12 @@ const NameContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  font-size: 34px;
+  font-size: 3rem;
   font-weight: 600;
 `;
 
 const Title = styled.h1`
-  font-size: 60px;
+  font-size: 6rem;
 `;
 
 const NameParagraph = styled.p``;
