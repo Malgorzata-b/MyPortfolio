@@ -48,7 +48,7 @@ body {
 
 #Ønskelister {
   grid-column: 2 span;
-  margin-left: 28%;
+  margin-left: 31%;
 }
 
 @keyframes rotate {

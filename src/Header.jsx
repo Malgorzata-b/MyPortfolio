@@ -8,7 +8,7 @@ const ButtonContainer = styled.div`
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
-  padding: 4vh 16vw;
+  padding: 4vh 10vw;
 `;
 
 const ButtonHeader = styled.button`
@@ -17,7 +17,6 @@ const ButtonHeader = styled.button`
   height: 4rem;
   border-radius: 5rem;
   cursor: pointer;
-
   &:hover {
     background-color: var(--ShadowButton);
     color: var(--dark);
@@ -40,8 +39,8 @@ const LinkGitCV = styled.a`
 const ImageDots = styled.img`
   position: relative;
   height: 40rem;
-  left: -12.5vw;
-  top: 22%;
+  left: -11vw;
+  top: 20%;
   animation: rotate 19s infinite linear;
 `;
 
@@ -53,7 +52,7 @@ const WelcomeContainer = styled.div`
   width: 25rem;
   gap: 2rem;
   margin: 0 15vw;
-  // margin-bottom: 3.5rem;
+
   backdrop-filter: blur(2px);
   position: relative;
   top: -25%;

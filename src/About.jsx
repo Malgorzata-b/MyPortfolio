@@ -24,8 +24,8 @@ const ImagesContainer = styled.div`
 const ImageContainerProfil = styled.div``;
 
 const ImageAurora = styled.img`
-  width: 8rem;
-  height: 12rem;
+  width: 18rem;
+  height: 25rem;
   border: 3px solid var(--black);
   border-radius: 5%;
   box-shadow: 0px 4px 4px 2px var(--black);
@@ -38,27 +38,28 @@ const CaruselContainer = styled.div`
   background-color: transparent;
   border-radius: 20px;
   box-shadow: 4px 4px 8px var(--CaruselColorShadowLight);
-  width: 19rem;
-  padding-top: 1rem;
-  height: 12rem;
-  padding-right: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem 1.5rem;
+  height: 15rem;
+  width: 25rem;
+  // border: 2px solid red;
 `;
 
 const ImageContainerImg = styled.div`
   display: flex;
   align-items: center;
   gap: 3rem;
-  width: 14.9rem;
-  height: 9rem;
-  padding-left: 1rem;
-  border-radius: 5%;
+  width: 15rem;
+  height: 10.5rem;
+  // border: 2px solid yellow;
+  border-radius: 20px;
   scroll-behavior: smooth;
   overflow: hidden;
 `;
 
 const Image = styled.img`
-  width: 20rem;
-  height: 9.5rem;
+  width: 16rem;
+  height: 10.5rem;
   border-radius: 5%;
   box-shadow: 4px 4px 8px var(--CaruselColorShadowLight);
 `;
@@ -69,7 +70,7 @@ const ButtonContainer = styled.div`
   gap: 0.5rem;
   background-color: transparent;
   width: 5rem;
-  padding-top: 0.5rem;
+  margin-top: 1.5rem;
 `;
 
 const LinkButton = styled.a`
@@ -89,29 +90,33 @@ const LinkButton = styled.a`
 
 const CompetencesContainer = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  padding-top: 3.5rem;
 `;
 
-const Paragraph = styled.p``;
+const Paragraph = styled.p`
+  font-weight: 700;
+  font-size: 2rem;
+`;
 
 const IconContainer = styled.div``;
 
 const IconImage = styled.img`
-  width: 1.5rem;
-  height: 1.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
 `;
 
 const IconTitle = styled.p`
   font-weight: 300;
-  font-size: 9px;
+  font-size: 1.5rem;
 `;
 
 const AboutMeContainer = styled.div`
   display: flex;
-  width: 100%;
+  max-width: 100vw;
   background: linear-gradient(to right top, var(--dark), var(--green));
-  border-radius: 5%;
-  height: 32rem;
+  border-radius: 20px;
   box-shadow: 0px 0px 15px 6px var(--black);
 `;
 
@@ -120,8 +125,9 @@ const Description = styled.p`
   line-height: 1.5;
   text-align: justify;
   width: 95%;
-  text-indent: 30px;
-  padding-left: 2rem;
+  text-indent: 4rem;
+  padding-left: 2vw;
+  font-size: 1.8rem;
 `;
 
 export default function About() {

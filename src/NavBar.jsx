@@ -29,7 +29,7 @@ const NavBarSection = styled.section`
 
 const NavBarNavigation = styled.nav`
   display: flex;
-  padding: 0 20vw;
+  padding: 0 34vw;
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
@@ -40,8 +40,8 @@ const NavBarButton = styled.button`
   color: var(--white);
   background-color: var(--NavBarButtonBackgroundColor);
   font-size: 1.5rem;
-  width: 8.5rem;
-  height: 3.5rem;
+  width: 8rem;
+  height: 3rem;
   border-radius: 5rem;
   border: 4px solid var(--NavBarButtonBorderColor);
   box-shadow: 1px 4px 4px 0px var(--NavBarButtonShadowColor);
@@ -61,8 +61,8 @@ const MainSection = styled.main`
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
-  height: 120rem;
+  padding: 8vh 2vw;
+  height: 210rem;
   width: 100%;
 `;
 
@@ -71,10 +71,9 @@ const AboutSection = styled.section`
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
-  width: 85%;
-  height: 33rem;
-  border-radius: 5%;
+  padding: 4vh 2vw;
+  border-radius: 20px;
+  // border: 2px solid red;
   backdrop-filter: blur(5px);
 `;
 
@@ -82,12 +81,10 @@ const ProjectsSection = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  padding-top: 5rem;
-  padding-left: 2.1rem;
-  width: 85%;
-  height: 85rem;
-  border-radius: 5%;
+  padding: 4vh 3vw;
+  border-radius: 20px;
   backdrop-filter: blur(5px);
+  // border: 2px solid red;
 `;
 
 const FooterSection = styled.footer`
@@ -96,7 +93,6 @@ const FooterSection = styled.footer`
   align-items: center;
   padding: 2rem;
   width: 100%;
-  height: 15rem;
   background: linear-gradient(to right top, var(--dark), var(--green));
   backdrop-filter: blur(10px);
 `;

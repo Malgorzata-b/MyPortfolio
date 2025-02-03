@@ -8,8 +8,6 @@ const ContactContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   margin-left: 8rem;
-  width: 80%;
-  height: 80%;
 `;
 
 const LogoNameContainer = styled.div`
@@ -20,44 +18,58 @@ const LogoNameContainer = styled.div`
 
 const CircleContainer = styled.div`
   border-radius: 100%;
-  border: 2px solid var(--black);
+  border: 4px solid var(--black);
   background: linear-gradient(to right top, var(--dark), var(--bb));
   box-shadow: 0px 0px 15px 6px var(--black);
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   animation: rotate 5s linear infinite;
   animation: shadow 9s infinite;
 `;
 
-const ParagraphContact = styled.p``;
+const ParagraphContact = styled.p`
+  font-size: 1.8rem;
+`;
 
 const InfocontactContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 20rem;
-  height: 4rem;
-  margin: 1rem 20rem;
-  padding: 0.5rem;
+  margin: 1vh 20vw;
+  padding: 0.5vh 0.5vw;
 `;
 
 const LinksContactContainer = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  margin: 2vh 50vw;
+  cursor: pointer;
 `;
 
 const IconImageProject = styled.img`
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: 2px solid black;
   box-shadow: 0px 0px 15px 3px var(--white);
+  &:hover {
+    background-color: var(--ShadowButton);
+    color: var(--dark);
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px var(--ShadowButton);
+  }
 `;
 
 const GitHubIcons = styled.img`
-  height: 1.4rem;
-  width: 2.5rem;
+  height: 2.5rem;
+  width: 3.5rem;
   border: 2px solid black;
   box-shadow: 0px 0px 15px 1px var(--white);
+  &:hover {
+    background-color: var(--ShadowButton);
+    color: var(--dark);
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px var(--ShadowButton);
+  }
 `;
 
 const Link = styled.a``;

@@ -19,19 +19,20 @@ const ProjectContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.2rem;
+  gap: 2.2rem;
+  margin: 3vh 0.5vw;
   border: 4px solid var(--black);
-  border-radius: 10%;
-  width: 28rem;
-  height: 19rem;
+  // border: 4px solid red;
+  border-radius: 40px;
+  width: 42vw;
   background: linear-gradient(to right top, var(--dark), var(--green));
   box-shadow: 0px 0px 15px 6px var(--black);
 `;
 
 const ImgProject = styled.img`
-  width: 12rem;
-  height: 12rem;
-  border-radius: 10%;
+  width: 20rem;
+  height: 23rem;
+  border-radius: 20px;
   border: 2px solid var(--black);
   margin-left: 0.5rem;
   box-shadow: 0px 0px 15px 6px var(--black);
@@ -41,30 +42,30 @@ const InformationProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  padding-top: 2rem;
 `;
 
 const TitleProject = styled.h1`
   text-align: center;
+  font-size: 2.5rem;
+  padding-top: 0.9vh;
 `;
 
-const ParagraphProject = styled.p``;
+const ParagraphProject = styled.p`
+  font-size: 2rem;
+`;
 
 const IconsContainerProject = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2.7rem;
-  border-radius: 5%;
-  width: 75%;
-  height: 2.4rem;
-  margin-left: 0.5rem;
-  padding-bottom: 0.5rem;
+  gap: 6rem;
+  border-radius: 20px;
+  padding: 0.5vh 2vw;
 `;
 
 const IconImageProject = styled.img`
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 3rem;
+  height: 3rem;
   border: 2px solid black;
   box-shadow: 0px 0px 15px 3px var(--black);
 `;
@@ -72,6 +73,7 @@ const IconImageProject = styled.img`
 const LinksContainerIcons = styled.div`
   display: flex;
   gap: 0.5rem;
+  cursor: pointer;
 `;
 
 const IconsContainerTools = styled.div`
@@ -79,11 +81,27 @@ const IconsContainerTools = styled.div`
   gap: 0.5rem;
 `;
 
-const GitHubMySQLIcons = styled.img`
-  height: 1.4rem;
-  width: 2.5rem;
+const IconImageLivePage = styled.img`
+  width: 3rem;
+  height: 3rem;
   border: 2px solid black;
   box-shadow: 0px 0px 15px 3px var(--black);
+   &:hover {
+    background-color: var(--ShadowButton);
+    color: var(--dark);
+    cursor: pointer;
+    box-shadow: 0px 0px 26px 0px var(--ShadowButton);
+`;
+const GitHubMySQLIcons = styled.img`
+  height: 3rem;
+  width: 3.5rem;
+  border: 2px solid black;
+  box-shadow: 0px 0px 15px 3px var(--black);
+   &:hover {
+    background-color: var(--ShadowButton);
+    color: var(--dark);
+    cursor: pointer;
+    box-shadow: 0px 0px 26px 0px var(--ShadowButton);
 `;
 
 const Link = styled.a``;
@@ -109,14 +127,14 @@ export default function Projects() {
 
             <LinksContainerIcons className="Links-containerIcons">
               <Link href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1">
-                <IconImageProject
+                <IconImageLivePage
                   className="Icons"
                   src={IconFigma}
                   alt="Figma"
                 />
               </Link>
               <Link href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
-                <IconImageProject
+                <IconImageLivePage
                   className="Icons"
                   src={IconLivePage}
                   alt="LivePage"
@@ -153,7 +171,7 @@ export default function Projects() {
                 />
               </Link>
               <Link href="https://malgorzata-b.github.io/Oppgave-API-/">
-                <IconImageProject
+                <IconImageLivePage
                   className="Icons"
                   src={IconLivePage}
                   alt="LivePage"
@@ -189,7 +207,7 @@ export default function Projects() {
                 />
               </Link>
               <Link href="https://malgorzata-b.github.io/Jule-React/">
-                <IconImageProject
+                <IconImageLivePage
                   className="Icons"
                   src={IconLivePage}
                   alt="LivePage"
@@ -223,7 +241,7 @@ export default function Projects() {
             />
             {/* <a href="https://www.canva.com/design/DAF8o1V0x2I/QFddjj07e_9rfAqkED9vXA/edit?utm_content=DAF8o1V0x2I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> */}
             <Link href={MySQLProject}>
-              <IconImageProject
+              <IconImageLivePage
                 className="Icons"
                 src={IconLivePage}
                 alt="LivePage"
@@ -258,7 +276,7 @@ export default function Projects() {
                 />
               </Link>
               <Link href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/">
-                <IconImageProject
+                <IconImageLivePage
                   className="Icons"
                   src={IconLivePage}
                   alt="LivePage"
