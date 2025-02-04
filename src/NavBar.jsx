@@ -8,11 +8,11 @@ import styled from "styled-components";
 
 const HeaderSection = styled.header`
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding: 2rem;
+  padding: 1.5vw;
   justify-content: space-between;
 `;
 
@@ -29,7 +29,7 @@ const NavBarSection = styled.section`
 
 const NavBarNavigation = styled.nav`
   display: flex;
-  padding: 0 34vw;
+  padding: 0 35vw;
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
@@ -61,9 +61,9 @@ const MainSection = styled.main`
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 8vh 2vw;
-  height: 210rem;
-  width: 100%;
+  padding: 4vh 2vw;
+  // height: 210rem;
+  max-width: 100%;
 `;
 
 const AboutSection = styled.section`
@@ -74,13 +74,17 @@ const AboutSection = styled.section`
   padding: 4vh 2vw;
   border-radius: 20px;
   // border: 2px solid red;
+  max-width: 90%;
   backdrop-filter: blur(5px);
 `;
 
 const ProjectsSection = styled.section`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+  max-width: 90%;
   padding: 4vh 3vw;
   border-radius: 20px;
   backdrop-filter: blur(5px);
@@ -91,10 +95,11 @@ const FooterSection = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  width: 100%;
+  padding: 2vw;
+  max-width: 100%;
   background: linear-gradient(to right top, var(--dark), var(--green));
   backdrop-filter: blur(10px);
+  // border: 2px solid red;
 `;
 
 export default function Navbar() {

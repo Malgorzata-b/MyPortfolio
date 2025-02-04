@@ -39,7 +39,7 @@ const LinkGitCV = styled.a`
 const ImageDots = styled.img`
   position: relative;
   height: 40rem;
-  left: -11vw;
+  left: -12vw;
   top: 20%;
   animation: rotate 19s infinite linear;
 `;
@@ -52,7 +52,6 @@ const WelcomeContainer = styled.div`
   width: 25rem;
   gap: 2rem;
   margin: 0 15vw;
-
   backdrop-filter: blur(2px);
   position: relative;
   top: -25%;

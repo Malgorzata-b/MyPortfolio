@@ -46,10 +46,19 @@ body {
   background-attachment: fixed;
 }
 
-#Ønskelister {
+/* // display: grid;
+display: flex;
+// grid-template-columns: repeat(2, 1fr);
+gap: 2rem;
+// padding: 4vh 3vw;
+border-radius: 20px;
+backdrop-filter: blur(5px);
+border: 2px solid red; */
+
+/* #Ønskelister {
   grid-column: 2 span;
   margin-left: 31%;
-}
+} */
 
 @keyframes rotate {
   from {

@@ -10,6 +10,8 @@ import IconReact from "/iconReact.png";
 import IconPython from "/iconPython.png";
 import IconMySQL from "/iconMySQL.png";
 
+// import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 
 const ImagesContainer = styled.div`
@@ -25,7 +27,7 @@ const ImageContainerProfil = styled.div``;
 
 const ImageAurora = styled.img`
   width: 18rem;
-  height: 25rem;
+  height: 28rem;
   border: 3px solid var(--black);
   border-radius: 5%;
   box-shadow: 0px 4px 4px 2px var(--black);
@@ -35,48 +37,51 @@ const CaruselContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
   background-color: transparent;
   border-radius: 20px;
   box-shadow: 4px 4px 8px var(--CaruselColorShadowLight);
-  margin-top: 2rem;
-  padding: 1.5rem 1.5rem;
-  height: 15rem;
-  width: 25rem;
+  padding: 1.5vh 1.5vw;
+  max-width: 50rem;
   // border: 2px solid red;
 `;
 
 const ImageContainerImg = styled.div`
   display: flex;
   align-items: center;
-  gap: 3rem;
-  width: 15rem;
-  height: 10.5rem;
-  // border: 2px solid yellow;
+  gap: 4rem;
+  max-width: 30rem;
+  // height: 10.5rem;
+  // border: 4px solid yellow;
+  box-shadow: 4px 4px 8px var(--CaruselColorShadowLight);
   border-radius: 20px;
   scroll-behavior: smooth;
   overflow: hidden;
 `;
 
 const Image = styled.img`
-  width: 16rem;
-  height: 10.5rem;
+  width: 33rem;
+  height: 25rem;
   border-radius: 5%;
+  // border: solid 5px green;
   box-shadow: 4px 4px 8px var(--CaruselColorShadowLight);
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1rem;
   background-color: transparent;
-  width: 5rem;
-  margin-top: 1.5rem;
+  // background-color: white;
+  width: 8rem;
+  // border: 7px solid rgb(18, 26, 20);
 `;
 
-const LinkButton = styled.a`
+const LinkButton = styled.button`
   display: inline-block;
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-bottom: 0.5rem;
   border-radius: 50%;
   box-shadow: 0 1px 5px var(--CaruselColorShadowDark),
@@ -91,13 +96,12 @@ const LinkButton = styled.a`
 const CompetencesContainer = styled.div`
   display: flex;
   gap: 1.2rem;
-  margin-top: 1.5rem;
   padding-top: 3.5rem;
 `;
 
 const Paragraph = styled.p`
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
 `;
 
 const IconContainer = styled.div``;
@@ -109,13 +113,14 @@ const IconImage = styled.img`
 
 const IconTitle = styled.p`
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 `;
 
 const AboutMeContainer = styled.div`
   display: flex;
-  max-width: 100vw;
+  max-width: 90rem;
   background: linear-gradient(to right top, var(--dark), var(--green));
+  padding: 5vh 5vw;
   border-radius: 20px;
   box-shadow: 0px 0px 15px 6px var(--black);
 `;
@@ -123,11 +128,11 @@ const AboutMeContainer = styled.div`
 const Description = styled.p`
   font-weight: 400;
   line-height: 1.5;
-  text-align: justify;
-  width: 95%;
+  text-align: center;
+  max-width: 95%;
   text-indent: 4rem;
   padding-left: 2vw;
-  font-size: 1.8rem;
+  font-size: 2rem;
 `;
 
 export default function About() {
@@ -144,9 +149,32 @@ export default function About() {
             <Image className="Photo" id="photo-3" src={Image3} alt="Image1" />
           </ImageContainerImg>
           <ButtonContainer class="button-container">
-            <LinkButton class="button" href="#photo-1"></LinkButton>
-            <LinkButton class="button" href="#photo-2"></LinkButton>
-            <LinkButton class="button" href="#photo-3"></LinkButton>
+            <LinkButton
+              className="button"
+              onClick={() =>
+                document
+                  .getElementById("photo-1")
+                  .scrollIntoView({ behavior: "smooth", block: "nearest" })
+              }
+            />
+
+            <LinkButton
+              className="button"
+              onClick={() =>
+                document
+                  .getElementById("photo-2")
+                  .scrollIntoView({ behavior: "smooth", block: "nearest" })
+              }
+            />
+
+            <LinkButton
+              className="button"
+              onClick={() =>
+                document
+                  .getElementById("photo-3")
+                  .scrollIntoView({ behavior: "smooth", block: "nearest" })
+              }
+            />
           </ButtonContainer>
         </CaruselContainer>
         <CompetencesContainer className="Competences">
