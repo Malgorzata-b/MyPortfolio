@@ -5,8 +5,8 @@ import styled from "styled-components";
 
 const ContactContainer = styled.section`
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-left: 8vw;
 `;
 
@@ -41,9 +41,8 @@ const InfocontactContainer = styled.div`
 
 const LinksContactContainer = styled.div`
   display: flex;
-  gap: 2rem;
-  margin-botton: 2vh;
-  margin-left: 68vw;
+  flex-direction: column;
+  gap: 1rem;
   max-width: 15rem;
   cursor: pointer;
   // border: 2px solid red;
@@ -61,9 +60,24 @@ const IconImageProject = styled.img`
   }
 `;
 
+const ContainerIconsLinks = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+`;
+
+const ParagraphIconsLinks = styled.p`
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Playfair Display", serif;
+  text-shadow: 0px 3px 3px var(--ShadowButton);
+`;
+
 const GitHubIcons = styled.img`
   height: 3rem;
-  width: 4.5rem;
+  width: 5.5rem;
   border: 2px solid black;
   box-shadow: 0px 0px 15px 1px var(--white);
   &:hover {
@@ -92,20 +106,23 @@ export default function Contact() {
       </InfocontactContainer>
 
       <LinksContactContainer className="Links-Contact">
-        <Link href="https://github.com/Malgorzata-b">
-          <GitHubIcons
-            className="Icons GitHubIcon"
-            src={IconGitHub}
-            alt="GitHub"
-          />
-        </Link>
-        <Link href="https://www.linkedin.com/in/malgorzata-bugajska/">
-          <IconImageProject
-            className="Icons"
-            src={IconLinkedin}
-            alt="Linkedin"
-          />
-        </Link>
+        <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+        <ContainerIconsLinks>
+          <Link href="https://github.com/Malgorzata-b">
+            <GitHubIcons
+              className="Icons GitHubIcon"
+              src={IconGitHub}
+              alt="GitHub"
+            />
+          </Link>
+          <Link href="https://www.linkedin.com/in/malgorzata-bugajska/">
+            <IconImageProject
+              className="Icons"
+              src={IconLinkedin}
+              alt="Linkedin"
+            />
+          </Link>
+        </ContainerIconsLinks>
       </LinksContactContainer>
     </ContactContainer>
   );

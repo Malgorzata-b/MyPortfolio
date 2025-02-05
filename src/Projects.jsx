@@ -54,6 +54,7 @@ const TitleProject = styled.h1`
   text-align: center;
   font-size: 2.5rem;
   padding-top: 0.9vh;
+  text-shadow: 0px 3px 3px var(--ShadowButton);
 `;
 
 const ParagraphProject = styled.p`
@@ -66,9 +67,9 @@ const IconsContainerProject = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 6rem;
+  gap: 7rem;
   border-radius: 20px;
-  padding: 2vh 2vw;
+  padding: 1vh 2vw;
 `;
 
 const IconImageProject = styled.img`
@@ -80,13 +81,19 @@ const IconImageProject = styled.img`
 
 const LinksContainerIcons = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 1rem;
+  max-width: 15rem;
   cursor: pointer;
+  width: 11rem;
 `;
 
 const IconsContainerTools = styled.div`
   display: flex;
-  gap: 1.3rem;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 15rem;
+  cursor: pointer;
 `;
 
 const IconImageLivePage = styled.img`
@@ -102,7 +109,7 @@ const IconImageLivePage = styled.img`
 `;
 const GitHubMySQLIcons = styled.img`
   height: 3.5rem;
-  width: 4.5rem;
+  width: 5.5rem;
   border: 2px solid black;
   box-shadow: 0px 0px 15px 3px var(--black);
    
@@ -114,12 +121,31 @@ const GitHubMySQLIcons = styled.img`
 
 const Link = styled.a``;
 
+const ParagraphIconsLinks = styled.p`
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Playfair Display", serif;
+  text-shadow: 0px 3px 3px var(--ShadowButton);
+`;
+
+const ContainerIconsLinks = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+`;
+
 export default function Projects() {
   return (
     <>
       <ContainerProjects className="Container-Projects">
         <ProjectContainer className="Project-con" id="Lavenda">
-          <ImgProject className="ImgProject" src={Lavenda} alt="Lavenda" />
+          <Link href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
+            {" "}
+            <ImgProject className="ImgProject" src={Lavenda} alt="Lavenda" />
+          </Link>
+
           <InformationProjectContainer className="Information-project">
             <TitleProject className="title-project">
               Project 1 <br />
@@ -132,29 +158,43 @@ export default function Projects() {
               som fremhever den naturlige karakteren til produktene.
             </ParagraphProject>
             <IconsContainerProject className="Icons-container">
-              <IconImageProject className="Icons" src={IconFigma} alt="Figma" />
-
               <LinksContainerIcons className="Links-containerIcons">
-                <Link href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1">
-                  <IconImageLivePage
+                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <IconImageProject
                     className="Icons"
                     src={IconFigma}
                     alt="Figma"
                   />
-                </Link>
-                <Link href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
-                  <IconImageLivePage
-                    className="Icons"
-                    src={IconLivePage}
-                    alt="LivePage"
-                  />
-                </Link>
+                </ContainerIconsLinks>
+              </LinksContainerIcons>
+              <LinksContainerIcons className="Links-containerIcons">
+                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <Link href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1">
+                    <IconImageLivePage
+                      className="Icons"
+                      src={IconFigma}
+                      alt="Figma"
+                    />
+                  </Link>
+                  <Link href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
+                    <IconImageLivePage
+                      className="Icons"
+                      src={IconLivePage}
+                      alt="LivePage"
+                    />
+                  </Link>
+                </ContainerIconsLinks>
               </LinksContainerIcons>
             </IconsContainerProject>
           </InformationProjectContainer>
         </ProjectContainer>
         <ProjectContainer className="Project-con" id="Countries">
-          <ImgProject className="ImgProject" src={MapApi} alt="Countries" />
+          <Link href="https://malgorzata-b.github.io/Oppgave-API-/">
+            <ImgProject className="ImgProject" src={MapApi} alt="Countries" />
+          </Link>
+
           <InformationProjectContainer className="Information-project">
             <TitleProject className="title-project">
               Project 2 <br />
@@ -167,25 +207,35 @@ export default function Projects() {
             </ParagraphProject>
             <IconsContainerProject className="Icons-container">
               <IconsContainerTools className="Icons-container-tools">
-                <IconImageProject className="Icons" src={IconJS} alt="JS" />
-                <IconImageProject className="Icons" src={IconHTML} alt="HTML" />
-                <IconImageProject className="Icons" src={IconCSS} alt="CSS" />
+                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <IconImageProject className="Icons" src={IconJS} alt="JS" />
+                  <IconImageProject
+                    className="Icons"
+                    src={IconHTML}
+                    alt="HTML"
+                  />
+                  <IconImageProject className="Icons" src={IconCSS} alt="CSS" />{" "}
+                </ContainerIconsLinks>
               </IconsContainerTools>
               <LinksContainerIcons className="Links-containerIcons">
-                <Link href="https://github.com/Malgorzata-b/Oppgave-API-">
-                  <GitHubMySQLIcons
-                    className="Icons GitHubIcon"
-                    src={IconGitHub}
-                    alt="GitHub"
-                  />
-                </Link>
-                <Link href="https://malgorzata-b.github.io/Oppgave-API-/">
-                  <IconImageLivePage
-                    className="Icons"
-                    src={IconLivePage}
-                    alt="LivePage"
-                  />
-                </Link>
+                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <Link href="https://github.com/Malgorzata-b/Oppgave-API-">
+                    <GitHubMySQLIcons
+                      className="Icons GitHubIcon"
+                      src={IconGitHub}
+                      alt="GitHub"
+                    />
+                  </Link>
+                  <Link href="https://malgorzata-b.github.io/Oppgave-API-/">
+                    <IconImageLivePage
+                      className="Icons"
+                      src={IconLivePage}
+                      alt="LivePage"
+                    />
+                  </Link>
+                </ContainerIconsLinks>
               </LinksContainerIcons>
             </IconsContainerProject>
           </InformationProjectContainer>
@@ -193,11 +243,14 @@ export default function Projects() {
       </ContainerProjects>
       <ContainerProjects className="ØnskelisterProject-Container">
         <ProjectContainer className="Project-con" id="Ønskelister">
-          <ImgProject
-            className="ImgProject"
-            src={ReactJule}
-            alt="Ønskelister"
-          />
+          <Link href="https://malgorzata-b.github.io/Jule-React/">
+            <ImgProject
+              className="ImgProject"
+              src={ReactJule}
+              alt="Ønskelister"
+            />
+          </Link>
+
           <InformationProjectContainer className="Information-project">
             <TitleProject className="title-project">
               Project 3 <br /> Ønskelister
@@ -209,29 +262,39 @@ export default function Projects() {
             </ParagraphProject>
             <IconsContainerProject className="Icons-container">
               <IconsContainerTools className="Icons-container-tools">
-                <IconImageProject
-                  className="Icons"
-                  src={IconReact}
-                  alt="React"
-                />
-                <IconImageProject className="Icons" src={IconHTML} alt="HTML" />
-                <IconImageProject className="Icons" src={IconCSS} alt="CSS" />
+                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <IconImageProject
+                    className="Icons"
+                    src={IconReact}
+                    alt="React"
+                  />
+                  <IconImageProject
+                    className="Icons"
+                    src={IconHTML}
+                    alt="HTML"
+                  />
+                  <IconImageProject className="Icons" src={IconCSS} alt="CSS" />
+                </ContainerIconsLinks>
               </IconsContainerTools>
               <LinksContainerIcons className="Links-containerIcons">
-                <Link href="https://github.com/Malgorzata-b/Jule-React">
-                  <GitHubMySQLIcons
-                    className="Icons GitHubIcon"
-                    src={IconGitHub}
-                    alt="GitHub"
-                  />
-                </Link>
-                <Link href="https://malgorzata-b.github.io/Jule-React/">
-                  <IconImageLivePage
-                    className="Icons"
-                    src={IconLivePage}
-                    alt="LivePage"
-                  />
-                </Link>
+                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <Link href="https://github.com/Malgorzata-b/Jule-React">
+                    <GitHubMySQLIcons
+                      className="Icons GitHubIcon"
+                      src={IconGitHub}
+                      alt="GitHub"
+                    />
+                  </Link>
+                  <Link href="https://malgorzata-b.github.io/Jule-React/">
+                    <IconImageLivePage
+                      className="Icons"
+                      src={IconLivePage}
+                      alt="LivePage"
+                    />
+                  </Link>
+                </ContainerIconsLinks>
               </LinksContainerIcons>
             </IconsContainerProject>
           </InformationProjectContainer>
@@ -239,11 +302,13 @@ export default function Projects() {
       </ContainerProjects>
       <ContainerProjects className="Container-Projects">
         <ProjectContainer className="Project-con" id="MySQL-Project">
-          <ImgProject
-            className="ImgProject"
-            src={MySQLImage}
-            alt="MySQL-Project"
-          />
+          <Link href={MySQLProject}>
+            <ImgProject
+              className="ImgProject"
+              src={MySQLImage}
+              alt="MySQL-Project"
+            />
+          </Link>
           <InformationProjectContainer className="Information-project">
             <TitleProject className="title-project">
               Project 4 <br />
@@ -255,24 +320,36 @@ export default function Projects() {
               funksjoner for databehandling.
             </ParagraphProject>
             <IconsContainerProject className="Icons-container MySQLContainer">
-              <GitHubMySQLIcons
-                className="Icons MySQLIcon"
-                src={IconMySQL}
-                alt="MySQL"
-              />
-              {/* <a href="https://www.canva.com/design/DAF8o1V0x2I/QFddjj07e_9rfAqkED9vXA/edit?utm_content=DAF8o1V0x2I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> */}
-              <Link href={MySQLProject}>
-                <IconImageLivePage
-                  className="Icons"
-                  src={IconLivePage}
-                  alt="LivePage"
-                />
-              </Link>
+              <LinksContainerIcons className="Links-containerIcons">
+                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <GitHubMySQLIcons
+                    className="Icons MySQLIcon"
+                    src={IconMySQL}
+                    alt="MySQL"
+                  />
+                </ContainerIconsLinks>
+              </LinksContainerIcons>
+              <LinksContainerIcons className="Links-containerIcons">
+                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <Link href={MySQLProject}>
+                    <IconImageLivePage
+                      className="Icons"
+                      src={IconLivePage}
+                      alt="LivePage"
+                    />
+                  </Link>
+                </ContainerIconsLinks>
+              </LinksContainerIcons>
             </IconsContainerProject>
           </InformationProjectContainer>
         </ProjectContainer>
         <ProjectContainer className="Project-con" id="Chess">
-          <ImgProject className="ImgProject" src={Chess} alt="Chess" />
+          <Link href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/">
+            <ImgProject className="ImgProject" src={Chess} alt="Chess" />
+          </Link>
+
           <InformationProjectContainer className="Information-project">
             <TitleProject className="title-project">
               Project 5 <br /> Chess
@@ -284,25 +361,35 @@ export default function Projects() {
             </ParagraphProject>
             <IconsContainerProject className="Icons-container">
               <IconsContainerTools className="Icons-container-tools">
-                <IconImageProject className="Icons" src={IconJS} alt="JS" />
-                <IconImageProject className="Icons" src={IconHTML} alt="HTML" />
-                <IconImageProject className="Icons" src={IconCSS} alt="CSS" />
+                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <IconImageProject className="Icons" src={IconJS} alt="JS" />
+                  <IconImageProject
+                    className="Icons"
+                    src={IconHTML}
+                    alt="HTML"
+                  />
+                  <IconImageProject className="Icons" src={IconCSS} alt="CSS" />{" "}
+                </ContainerIconsLinks>
               </IconsContainerTools>
               <LinksContainerIcons className="Links-containerIcons">
-                <Link href="https://github.com/Malgorzata-b/DOM-Manipulation-Chess">
-                  <GitHubMySQLIcons
-                    className="Icons GitHubIcon"
-                    src={IconGitHub}
-                    alt="GitHub"
-                  />
-                </Link>
-                <Link href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/">
-                  <IconImageLivePage
-                    className="Icons"
-                    src={IconLivePage}
-                    alt="LivePage"
-                  />
-                </Link>
+                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                <ContainerIconsLinks>
+                  <Link href="https://github.com/Malgorzata-b/DOM-Manipulation-Chess">
+                    <GitHubMySQLIcons
+                      className="Icons GitHubIcon"
+                      src={IconGitHub}
+                      alt="GitHub"
+                    />
+                  </Link>
+                  <Link href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/">
+                    <IconImageLivePage
+                      className="Icons"
+                      src={IconLivePage}
+                      alt="LivePage"
+                    />
+                  </Link>
+                </ContainerIconsLinks>
               </LinksContainerIcons>
             </IconsContainerProject>
           </InformationProjectContainer>

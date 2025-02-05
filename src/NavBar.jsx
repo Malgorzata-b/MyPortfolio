@@ -7,7 +7,7 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 
 const HeaderSection = styled.header`
-  height: 100vh;
+  height: 90vh;
   max-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ const HeaderSection = styled.header`
 
 const NavBarSection = styled.section`
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
@@ -29,10 +29,9 @@ const NavBarSection = styled.section`
 
 const NavBarNavigation = styled.nav`
   display: flex;
-  padding: 0 35vw;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 3.5rem;
   background-color: transparent;
 `;
 

@@ -95,7 +95,9 @@ const LinkButton = styled.button`
 
 const CompetencesContainer = styled.div`
   display: flex;
-  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   padding-top: 3.5rem;
 `;
 
@@ -104,11 +106,16 @@ const Paragraph = styled.p`
   font-size: 2.5rem;
 `;
 
-const IconContainer = styled.div``;
+const IconContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 const IconImage = styled.img`
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
 `;
 
 const IconTitle = styled.p`
