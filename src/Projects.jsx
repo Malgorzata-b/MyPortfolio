@@ -190,7 +190,10 @@ export default function Projects() {
     <>
       <ContainerProjects className="Container-Projects">
         <ProjectContainer className="Project-con" id="Lavenda">
-          <Link href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
+          <Link
+            href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+            target="_blank"
+          >
             {" "}
             <ImgProject className="ImgProject" src={Lavenda} alt="Lavenda" />
           </Link>
@@ -221,12 +224,18 @@ export default function Projects() {
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
                   <ButtonLinks id="Button-header">
-                    <LinkGitLive href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1">
+                    <LinkGitLive
+                      href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1"
+                      target="_blank"
+                    >
                       <p>Figma</p>
                     </LinkGitLive>
                   </ButtonLinks>
                   <ButtonLinks id="Button-header">
-                    <LinkGitLive href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
+                    <LinkGitLive
+                      href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                      target="_blank"
+                    >
                       <p>Live</p>
                     </LinkGitLive>
                   </ButtonLinks>
@@ -251,7 +260,10 @@ export default function Projects() {
         </ProjectContainer>
 
         <ProjectContainer className="Project-con" id="Countries">
-          <Link href="https://malgorzata-b.github.io/Oppgave-API-/">
+          <Link
+            href="https://malgorzata-b.github.io/Oppgave-API-/"
+            target="_blank"
+          >
             <ImgProject className="ImgProject" src={MapApi} alt="Countries" />
           </Link>
 
@@ -282,12 +294,18 @@ export default function Projects() {
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
                   <ButtonLinks id="Button-header">
-                    <LinkGitLive href="https://github.com/Malgorzata-b/Oppgave-API-">
+                    <LinkGitLive
+                      href="https://github.com/Malgorzata-b/Oppgave-API-"
+                      target="_blank"
+                    >
                       <p>GitHub</p>
                     </LinkGitLive>
                   </ButtonLinks>
                   <ButtonLinks id="Button-header">
-                    <LinkGitLive href="https://malgorzata-b.github.io/Oppgave-API-/">
+                    <LinkGitLive
+                      href="https://malgorzata-b.github.io/Oppgave-API-/"
+                      target="_blank"
+                    >
                       <p>Live</p>
                     </LinkGitLive>
                   </ButtonLinks>
@@ -314,7 +332,10 @@ export default function Projects() {
       </ContainerProjects>
       <ContainerProjects className="ØnskelisterProject-Container">
         <ProjectContainer className="Project-con" id="Ønskelister">
-          <Link href="https://malgorzata-b.github.io/Jule-React/">
+          <Link
+            href="https://malgorzata-b.github.io/Jule-React/"
+            target="_blank"
+          >
             <ImgProject
               className="ImgProject"
               src={ReactJule}
@@ -352,12 +373,18 @@ export default function Projects() {
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
                   <ButtonLinks id="Button-header">
-                    <LinkGitLive href="https://github.com/Malgorzata-b/Jule-React">
+                    <LinkGitLive
+                      href="https://github.com/Malgorzata-b/Jule-React"
+                      target="_blank"
+                    >
                       <p>GitHub</p>
                     </LinkGitLive>
                   </ButtonLinks>
                   <ButtonLinks id="Button-header">
-                    <LinkGitLive href="https://malgorzata-b.github.io/Jule-React/">
+                    <LinkGitLive
+                      href="https://malgorzata-b.github.io/Jule-React/"
+                      target="_blank"
+                    >
                       <p>Live</p>
                     </LinkGitLive>
                   </ButtonLinks>
@@ -384,7 +411,7 @@ export default function Projects() {
       </ContainerProjects>
       <ContainerProjects className="Container-Projects">
         <ProjectContainer className="Project-con" id="MySQL-Project">
-          <Link href={MySQLProject}>
+          <Link href={MySQLProject} target="_blank">
             <ImgProject
               className="ImgProject"
               src={MySQLImage}
@@ -416,7 +443,7 @@ export default function Projects() {
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
                   <ButtonLinks id="Button-header">
-                    <LinkGitLive href={MySQLProject}>
+                    <LinkGitLive href={MySQLProject} target="_blank">
                       <p>Live</p>
                     </LinkGitLive>
                   </ButtonLinks>
@@ -433,7 +460,10 @@ export default function Projects() {
           </InformationProjectContainer>
         </ProjectContainer>
         <ProjectContainer className="Project-con" id="Chess">
-          <Link href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/">
+          <Link
+            href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/"
+            target="_blank"
+          >
             <ImgProject className="ImgProject" src={Chess} alt="Chess" />
           </Link>
 
@@ -463,12 +493,18 @@ export default function Projects() {
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
                   <ButtonLinks id="Button-header">
-                    <LinkGitLive href="https://github.com/Malgorzata-b/DOM-Manipulation-Chess">
+                    <LinkGitLive
+                      href="https://github.com/Malgorzata-b/DOM-Manipulation-Chess"
+                      target="_blank"
+                    >
                       <p>GitHub</p>
                     </LinkGitLive>
                   </ButtonLinks>
                   <ButtonLinks id="Button-header">
-                    <LinkGitLive href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/">
+                    <LinkGitLive
+                      href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/"
+                      target="_blank"
+                    >
                       <p>Live</p>
                     </LinkGitLive>
                   </ButtonLinks>

@@ -51,10 +51,10 @@ const WelcomeContainer = styled.div`
   align-items: center;
   width: 25rem;
   gap: 2rem;
-  margin: 0 15vw;
+  margin: 0 14.8vw;
   backdrop-filter: blur(2px);
   position: relative;
-  top: -25%;
+  top: -20%;
 `;
 
 const NameContainer = styled.div`
@@ -78,10 +78,14 @@ export default function Header() {
     <>
       <ButtonContainer className="Button-container">
         <ButtonHeader id="Button-header">
-          <LinkGitCV href="https://github.com/Malgorzata-b">GitHub</LinkGitCV>
+          <LinkGitCV href="https://github.com/Malgorzata-b" target="_blank">
+            GitHub
+          </LinkGitCV>
         </ButtonHeader>
         <ButtonHeader id="Button-header">
-          <LinkGitCV href={CV}>CV</LinkGitCV>
+          <LinkGitCV href={CV} target="_blank">
+            CV
+          </LinkGitCV>
         </ButtonHeader>
       </ButtonContainer>
       <ImageDots className="img-dots" src={Dots} alt="Dots" />
@@ -90,6 +94,7 @@ export default function Header() {
         <NameContainer id="Name">
           {/* <NameParagraph>Jeg heter</NameParagraph> */}
           <NameParagraph>Malgorzata Bugajska</NameParagraph>
+
           <NameParagraph>Frontend Utvikler</NameParagraph>
         </NameContainer>
       </WelcomeContainer>

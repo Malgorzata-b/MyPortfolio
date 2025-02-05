@@ -106,7 +106,7 @@ export default function Contact() {
       </InfocontactContainer>
 
       <LinksContactContainer className="Links-Contact">
-        <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+        {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
         <ContainerIconsLinks>
           <Link href="https://github.com/Malgorzata-b">
             <GitHubIcons
