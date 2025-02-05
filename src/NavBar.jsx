@@ -73,7 +73,7 @@ const AboutSection = styled.section`
   padding: 4vh 2vw;
   border-radius: 20px;
   // border: 2px solid red;
-  max-width: 90%;
+  max-width: 95%;
   backdrop-filter: blur(5px);
 `;
 
@@ -83,7 +83,7 @@ const ProjectsSection = styled.section`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  max-width: 90%;
+  max-width: 95%;
   padding: 4vh 3vw;
   border-radius: 20px;
   backdrop-filter: blur(5px);

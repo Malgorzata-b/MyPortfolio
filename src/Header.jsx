@@ -88,9 +88,9 @@ export default function Header() {
       <WelcomeContainer className="Welcome-container">
         <Title id="Title">Velkommen</Title>
         <NameContainer id="Name">
-          <NameParagraph>Jeg heter</NameParagraph>
+          {/* <NameParagraph>Jeg heter</NameParagraph> */}
           <NameParagraph>Malgorzata Bugajska</NameParagraph>
-          <NameParagraph>Fullstack</NameParagraph>
+          <NameParagraph>Frontend Utvikler</NameParagraph>
         </NameContainer>
       </WelcomeContainer>
     </>

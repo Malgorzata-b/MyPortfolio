@@ -49,12 +49,12 @@ const LinksContactContainer = styled.div`
 `;
 
 const IconImageProject = styled.img`
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   border: 2px solid black;
   box-shadow: 0px 0px 15px 3px var(--white);
+  background-color: var(--CaruselColorShadowLight);
   &:hover {
-    background-color: var(--ShadowButton);
     color: var(--dark);
     box-shadow: 0px 0px 2px 2px var(--ShadowButton);
   }
@@ -76,12 +76,12 @@ const ParagraphIconsLinks = styled.p`
 `;
 
 const GitHubIcons = styled.img`
-  height: 3rem;
-  width: 5.5rem;
+  height: 4rem;
+  width: 4rem;
   border: 2px solid black;
   box-shadow: 0px 0px 15px 1px var(--white);
+  background-color: var(--CaruselColorShadowLight);
   &:hover {
-    background-color: var(--ShadowButton);
     color: var(--dark);
     box-shadow: 0px 0px 2px 2px var(--ShadowButton);
   }

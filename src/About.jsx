@@ -118,6 +118,12 @@ const IconImage = styled.img`
   height: 4rem;
 `;
 
+const JSIconImage = styled.img`
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+`;
+
 const IconTitle = styled.p`
   font-weight: 300;
   font-size: 1.7rem;
@@ -199,7 +205,7 @@ export default function About() {
             <IconTitle id="Title-competences">Figma</IconTitle>
           </IconContainer>
           <IconContainer className="JS">
-            <IconImage className="Icon" src={IconJS} alt="JS" />
+            <JSIconImage className="Icon" src={IconJS} alt="JS" />
             <IconTitle id="Title-competences">JavaScript</IconTitle>
           </IconContainer>
           <IconContainer className="REACT">

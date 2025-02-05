@@ -19,8 +19,7 @@ const ProjectContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
-  margin: 3vh 0.5vw;
+  margin: 3vh 0;
   border: 4px solid var(--black);
   // border: 4px solid red;
   border-radius: 40px;
@@ -40,7 +39,7 @@ const ImgProject = styled.img`
   height: 23rem;
   border-radius: 20px;
   border: 2px solid var(--black);
-  margin: 0.5vh 0.5vw;
+  margin: 2vh 2vw;
   box-shadow: 0px 0px 15px 6px var(--black);
 `;
 
@@ -48,6 +47,7 @@ const InformationProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  padding-right: 3vw;
 `;
 
 const TitleProject = styled.h1`
@@ -68,8 +68,10 @@ const IconsContainerProject = styled.div`
   justify-content: space-around;
   align-items: center;
   gap: 7rem;
+  max-width: 45rem;
   border-radius: 20px;
-  padding: 1vh 2vw;
+  padding: 1vh 1vw;
+  // border: 2px solid red;
 `;
 
 const IconImageProject = styled.img`
@@ -83,9 +85,8 @@ const LinksContainerIcons = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 15rem;
+  width: 18rem;
   cursor: pointer;
-  width: 11rem;
 `;
 
 const IconsContainerTools = styled.div`
@@ -96,29 +97,34 @@ const IconsContainerTools = styled.div`
   cursor: pointer;
 `;
 
-const IconImageLivePage = styled.img`
-  width: 3.5rem;
-  height: 3.5rem;
-  border: 2px solid black;
-  box-shadow: 0px 0px 15px 3px var(--black);
- 
-   &:hover {
-    background-color: var(--ShadowButton);
-    color: var(--dark);
-    box-shadow: 0px 0px 26px 0px var(--ShadowButton);
-`;
+// const IconImageLivePage = styled.img`
+//   width: 4.5rem;
+//   height: 4.5rem;
+//   // border: 2px solid black;
+//   // box-shadow: 0px 0px 15px 3px var(--black);
+
+//   //  &:hover {
+//   //   background-color: var(--ShadowButton);
+//   //   color: var(--dark);
+//   //   box-shadow: 0px 0px 26px 0px var(--ShadowButton);
+// `;
 const GitHubMySQLIcons = styled.img`
-  height: 3.5rem;
-  width: 5.5rem;
+  height: 4rem;
+  width: 4rem;
   border: 2px solid black;
   box-shadow: 0px 0px 15px 3px var(--black);
-   
+
    &:hover {
     background-color: var(--ShadowButton);
     color: var(--dark);
     box-shadow: 0px 0px 26px 0px var(--ShadowButton);
 `;
 
+// const JSIconImage = styled.img`
+//   width: 4rem;
+//   height: 4rem;
+//   border-radius: 50%;
+// `;
 const Link = styled.a``;
 
 const ParagraphIconsLinks = styled.p`
@@ -133,7 +139,50 @@ const ContainerIconsLinks = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  max-width: 25rem;
+`;
+
+// const ButtonLinks = styled.button`
+//   background-color: transparent;
+//   width: 8rem;
+//   height: 4rem;
+//   border-radius: 5rem;
+//   cursor: pointer;
+//   &:hover {
+//     background-color: var(--ShadowButton);
+//     color: var(--dark);
+//     cursor: pointer;
+//     box-shadow: 0px 0px 2px 2px var(--ShadowButton);
+//   }
+// `;
+
+const ButtonLinks = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 16rem;
+  height: 4rem;
+  border: 8px solid black;
+  border-radius: 5rem;
+  cursor: pointer;
+  margin-top: 5vh;
+
+  &:hover {
+    background-color: var(--ShadowButton);
+    color: var(--dark);
+    box-shadow: 0px 0px 2px 2px var(--ShadowButton);
+  }
+`;
+
+const LinkGitLive = styled.a`
+ color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+ 
+  }
 `;
 
 export default function Projects() {
@@ -159,7 +208,7 @@ export default function Projects() {
             </ParagraphProject>
             <IconsContainerProject className="Icons-container">
               <LinksContainerIcons className="Links-containerIcons">
-                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
                 <ContainerIconsLinks>
                   <IconImageProject
                     className="Icons"
@@ -169,9 +218,19 @@ export default function Projects() {
                 </ContainerIconsLinks>
               </LinksContainerIcons>
               <LinksContainerIcons className="Links-containerIcons">
-                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
-                  <Link href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1">
+                  <ButtonLinks id="Button-header">
+                    <LinkGitLive href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1">
+                      <p>Figma</p>
+                    </LinkGitLive>
+                  </ButtonLinks>
+                  <ButtonLinks id="Button-header">
+                    <LinkGitLive href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
+                      <p>Live</p>
+                    </LinkGitLive>
+                  </ButtonLinks>
+                  {/* <Link href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1">
                     <IconImageLivePage
                       className="Icons"
                       src={IconFigma}
@@ -184,12 +243,13 @@ export default function Projects() {
                       src={IconLivePage}
                       alt="LivePage"
                     />
-                  </Link>
+                  </Link> */}
                 </ContainerIconsLinks>
               </LinksContainerIcons>
             </IconsContainerProject>
           </InformationProjectContainer>
         </ProjectContainer>
+
         <ProjectContainer className="Project-con" id="Countries">
           <Link href="https://malgorzata-b.github.io/Oppgave-API-/">
             <ImgProject className="ImgProject" src={MapApi} alt="Countries" />
@@ -207,7 +267,7 @@ export default function Projects() {
             </ParagraphProject>
             <IconsContainerProject className="Icons-container">
               <IconsContainerTools className="Icons-container-tools">
-                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
                 <ContainerIconsLinks>
                   <IconImageProject className="Icons" src={IconJS} alt="JS" />
                   <IconImageProject
@@ -219,22 +279,33 @@ export default function Projects() {
                 </ContainerIconsLinks>
               </IconsContainerTools>
               <LinksContainerIcons className="Links-containerIcons">
-                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
-                  <Link href="https://github.com/Malgorzata-b/Oppgave-API-">
+                  <ButtonLinks id="Button-header">
+                    <LinkGitLive href="https://github.com/Malgorzata-b/Oppgave-API-">
+                      <p>GitHub</p>
+                    </LinkGitLive>
+                  </ButtonLinks>
+                  <ButtonLinks id="Button-header">
+                    <LinkGitLive href="https://malgorzata-b.github.io/Oppgave-API-/">
+                      <p>Live</p>
+                    </LinkGitLive>
+                  </ButtonLinks>
+
+                  {/* <Link href="https://github.com/Malgorzata-b/Oppgave-API-">
                     <GitHubMySQLIcons
                       className="Icons GitHubIcon"
                       src={IconGitHub}
                       alt="GitHub"
                     />
-                  </Link>
-                  <Link href="https://malgorzata-b.github.io/Oppgave-API-/">
+                  </Link> */}
+                  {/* <Link href="https://malgorzata-b.github.io/Oppgave-API-/">
                     <IconImageLivePage
                       className="Icons"
                       src={IconLivePage}
                       alt="LivePage"
                     />
-                  </Link>
+                  </Link> */}
                 </ContainerIconsLinks>
               </LinksContainerIcons>
             </IconsContainerProject>
@@ -262,7 +333,7 @@ export default function Projects() {
             </ParagraphProject>
             <IconsContainerProject className="Icons-container">
               <IconsContainerTools className="Icons-container-tools">
-                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
                 <ContainerIconsLinks>
                   <IconImageProject
                     className="Icons"
@@ -278,9 +349,20 @@ export default function Projects() {
                 </ContainerIconsLinks>
               </IconsContainerTools>
               <LinksContainerIcons className="Links-containerIcons">
-                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
-                  <Link href="https://github.com/Malgorzata-b/Jule-React">
+                  <ButtonLinks id="Button-header">
+                    <LinkGitLive href="https://github.com/Malgorzata-b/Jule-React">
+                      <p>GitHub</p>
+                    </LinkGitLive>
+                  </ButtonLinks>
+                  <ButtonLinks id="Button-header">
+                    <LinkGitLive href="https://malgorzata-b.github.io/Jule-React/">
+                      <p>Live</p>
+                    </LinkGitLive>
+                  </ButtonLinks>
+
+                  {/* <Link href="https://github.com/Malgorzata-b/Jule-React">
                     <GitHubMySQLIcons
                       className="Icons GitHubIcon"
                       src={IconGitHub}
@@ -293,7 +375,7 @@ export default function Projects() {
                       src={IconLivePage}
                       alt="LivePage"
                     />
-                  </Link>
+                  </Link> */}
                 </ContainerIconsLinks>
               </LinksContainerIcons>
             </IconsContainerProject>
@@ -321,7 +403,7 @@ export default function Projects() {
             </ParagraphProject>
             <IconsContainerProject className="Icons-container MySQLContainer">
               <LinksContainerIcons className="Links-containerIcons">
-                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
                 <ContainerIconsLinks>
                   <GitHubMySQLIcons
                     className="Icons MySQLIcon"
@@ -331,15 +413,20 @@ export default function Projects() {
                 </ContainerIconsLinks>
               </LinksContainerIcons>
               <LinksContainerIcons className="Links-containerIcons">
-                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
-                  <Link href={MySQLProject}>
+                  <ButtonLinks id="Button-header">
+                    <LinkGitLive href={MySQLProject}>
+                      <p>Live</p>
+                    </LinkGitLive>
+                  </ButtonLinks>
+                  {/* <Link href={MySQLProject}>
                     <IconImageLivePage
                       className="Icons"
                       src={IconLivePage}
                       alt="LivePage"
                     />
-                  </Link>
+                  </Link> */}
                 </ContainerIconsLinks>
               </LinksContainerIcons>
             </IconsContainerProject>
@@ -361,7 +448,7 @@ export default function Projects() {
             </ParagraphProject>
             <IconsContainerProject className="Icons-container">
               <IconsContainerTools className="Icons-container-tools">
-                <ParagraphIconsLinks>Laget inn:</ParagraphIconsLinks>
+                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
                 <ContainerIconsLinks>
                   <IconImageProject className="Icons" src={IconJS} alt="JS" />
                   <IconImageProject
@@ -373,9 +460,20 @@ export default function Projects() {
                 </ContainerIconsLinks>
               </IconsContainerTools>
               <LinksContainerIcons className="Links-containerIcons">
-                <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks>
+                {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
-                  <Link href="https://github.com/Malgorzata-b/DOM-Manipulation-Chess">
+                  <ButtonLinks id="Button-header">
+                    <LinkGitLive href="https://github.com/Malgorzata-b/DOM-Manipulation-Chess">
+                      <p>GitHub</p>
+                    </LinkGitLive>
+                  </ButtonLinks>
+                  <ButtonLinks id="Button-header">
+                    <LinkGitLive href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/">
+                      <p>Live</p>
+                    </LinkGitLive>
+                  </ButtonLinks>
+
+                  {/* <Link href="https://github.com/Malgorzata-b/DOM-Manipulation-Chess">
                     <GitHubMySQLIcons
                       className="Icons GitHubIcon"
                       src={IconGitHub}
@@ -388,7 +486,7 @@ export default function Projects() {
                       src={IconLivePage}
                       alt="LivePage"
                     />
-                  </Link>
+                  </Link> */}
                 </ContainerIconsLinks>
               </LinksContainerIcons>
             </IconsContainerProject>

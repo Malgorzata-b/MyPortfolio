@@ -55,10 +55,10 @@ border-radius: 20px;
 backdrop-filter: blur(5px);
 border: 2px solid red; */
 
-/* #Ønskelister {
-  grid-column: 2 span;
-  margin-left: 31%;
-} */
+#Ønskelister {
+  padding: 3vh 0;
+  padding-left: 3vw;
+}
 
 @keyframes rotate {
   from {
