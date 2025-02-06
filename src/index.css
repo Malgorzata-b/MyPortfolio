@@ -55,7 +55,7 @@ border-radius: 20px;
 backdrop-filter: blur(5px);
 border: 2px solid red; */
 
-#Ønskelister {
+.Ønskelister {
   padding: 3vh 0;
   padding-left: 3vw;
 }
@@ -81,139 +81,233 @@ border: 2px solid red; */
   }
 }
 
-/* @media only screen and (max-width: 1100px) {
-  .Navbar-container {
-    gap: 1.5rem;
-    height: 1.6rem;
-    padding: 1.4rem;
-    margin-right: 8%;
-  }
-  #Information-container {
-    height: auto;
-  }
-  .Description {
-    font-size: 0.9rem;
-    height: 20rem;
-    width: 20rem;
+@media only screen and (max-width: 1925px) {
+  #Button-header {
+    width: 4rem;
+    height: 2rem;
   }
 
-  .Projects-container {
-    grid-template-columns: 1fr;
-    width: 100%;
-    height: auto;
-    margin-right: 12rem;
+  #Links-header {
+    font-size: 0.8rem;
   }
 
-  #Ønskelister {
-    grid-column: 1;
-    margin-left: 0;
-  }
-}
-
-@media only screen and (max-width: 980px) {
-  .Navbar-container {
-    gap: 1.5rem;
-    height: 1.6rem;
-    padding: 1.4rem;
-    margin-right: 11%;
+  #img-dots {
+    height: 18rem;
+    top: 18%;
+    left: -12.5%;
   }
 
-  .Description {
-    font-size: 0.9rem;
-    height: 23rem;
-    width: 10rem;
-  }
-
-  .AboutMe {
-    height: 25rem;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  #HomePage {
-    align-items: center;
-  }
-
-  .Navbar-container {
-    gap: 1.5rem;
-    height: 1.6rem;
-    padding: 1.4rem;
-    margin-right: 35%;
-  }
-
-  #Information-container {
-    height: 150rem;
-  }
-
-  .About-container {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    margin-left: -25rem;
-  }
-
-  .Description {
-    margin-left: 10rem;
-    text-align: center;
-    margin-right: 10rem;
-  }
-
-  #Contact {
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 690px) {
-  #HomePage {
-    align-items: start;
-    justify-content: space-around;
-    padding-left: 9rem;
-  }
-
-  .Button-container {
-    margin-left: 15%;
+  #Welcome-container {
+    width: 25rem;
+    left: 8%;
+    top: -28%;
   }
 
   #Title {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 
   #Name {
     font-size: 1.5rem;
   }
 
-  .Welcome-container {
-    margin-left: 3%;
+  #ButtonNavBar {
+    font-size: 0.8rem;
+    width: 5rem;
+    height: 2rem;
   }
 
-  .img-dots {
-    margin-bottom: 5%;
-    margin-left: 12%;
-    height: 13rem;
-    width: 16rem;
-  }
-  .Navbar-container {
+  #Navbar-container {
     gap: 1.5rem;
-    height: 1.6rem;
-    padding: 1.4rem;
-    margin-right: 52%;
-  }
-  .About-container {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    height: 40rem;
-    margin-left: -37rem;
-  }
-  .Description {
-    margin-left: 9rem;
-    margin-right: 11rem;
   }
 
-  .Projects-container {
-    grid-column: 1;
-    gap: 0.4rem;
-    width: 100%;
-    height: auto;
+  #Projects-container {
+    gap: 0.5rem;
   }
-} */
+
+  #Profil {
+    width: 10rem;
+    height: 14rem;
+  }
+
+  #Image-Gallery {
+    max-width: 12rem;
+  }
+  #photo-1 {
+    width: 20rem;
+    height: 9rem;
+  }
+  #photo-2 {
+    width: 20rem;
+    height: 9rem;
+  }
+  #photo-3 {
+    width: 20rem;
+    height: 9rem;
+  }
+
+  #buttonImage {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  #Competences {
+    gap: 0.5rem;
+  }
+
+  #CompetancesTitle {
+    font-size: 1.2rem;
+  }
+
+  #CompetencesIconContainer {
+    gap: 0.4rem;
+  }
+
+  #Title-competences {
+    font-size: 0.9rem;
+  }
+
+  #Icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  #Description {
+    font-size: 1rem;
+    max-width: 30rem;
+  }
+
+  #Circle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  #Info-Contact {
+    gap: 1rem;
+  }
+
+  #TitleContact {
+    font-size: 1rem;
+  }
+
+  #Links-Contact {
+    gap: 1rem;
+  }
+
+  #Icons {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  #Project-con {
+    max-width: 40rem;
+  }
+
+  #Information-project {
+    max-width: 20rem;
+  }
+
+  #Icons-container {
+    gap: 3rem;
+  }
+
+  #containerIconsTools {
+    gap: 0.4rem;
+  }
+
+  #ImgProject {
+    max-width: 10rem;
+    height: 13rem;
+  }
+
+  #title-project {
+    font-size: 1.5rem;
+  }
+
+  #paragraph-project {
+    font-size: 1rem;
+  }
+
+  #LagetMed {
+    font-size: 0.8rem;
+  }
+
+  #LagetMeds {
+    font-size: 0.8rem;
+    width: 6rem;
+  }
+
+  #TitleButtonLinks {
+    font-size: 0.8rem;
+  }
+
+  #Button {
+    width: 4rem;
+    height: 2rem;
+    border: 5px solid black;
+  }
+
+  #ButtonContainer {
+    gap: 0.5rem;
+  }
+
+  .Ønskelister {
+    padding: 0 0;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1980px) {
+  #img-dots {
+    height: 24rem;
+    top: 18%;
+    left: -12%;
+  }
+
+  #Welcome-container {
+    width: 25rem;
+    left: 4.3%;
+    top: -25%;
+  }
+
+  #Description {
+    font-size: 1.2rem;
+    max-width: 40rem;
+  }
+
+  #Profil {
+    width: 11rem;
+    height: 15rem;
+  }
+
+  #Image-Gallery {
+    max-width: 15rem;
+  }
+  #photo-1 {
+    width: 25rem;
+    height: 12rem;
+  }
+  #photo-2 {
+    width: 25rem;
+    height: 12rem;
+  }
+  #photo-3 {
+    width: 25rem;
+    height: 12rem;
+  }
+
+  #buttonImage {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  #ImgProject {
+    max-width: 15rem;
+    height: 18rem;
+  }
+
+  .Ønskelister {
+    padding: 0 0;
+    padding-left: 0;
+  }
+}

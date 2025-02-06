@@ -4,8 +4,8 @@ import IconFigma from "/iconFigma.png";
 import IconJS from "/iconJS.png";
 import IconReact from "/iconReact.png";
 import IconMySQL from "/iconMySQL.png";
-import IconGitHub from "/iconGitHub.png";
-import IconLivePage from "/iconLivePage.png";
+// import IconGitHub from "/iconGitHub.png";
+// import IconLivePage from "/iconLivePage.png";
 import Lavenda from "/Lavenda.png";
 import MapApi from "/MapApi.png";
 import ReactJule from "/ReactJule.png";
@@ -85,7 +85,7 @@ const LinksContainerIcons = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 18rem;
+  max-width: 18rem;
   cursor: pointer;
 `;
 
@@ -188,55 +188,53 @@ const LinkGitLive = styled.a`
 export default function Projects() {
   return (
     <>
-      <ContainerProjects className="Container-Projects">
-        <ProjectContainer className="Project-con" id="Lavenda">
+      <ContainerProjects id="Container-Projects">
+        <ProjectContainer id="Project-con" className="Lavenda">
           <Link
             href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
             target="_blank"
           >
             {" "}
-            <ImgProject className="ImgProject" src={Lavenda} alt="Lavenda" />
+            <ImgProject id="ImgProject" src={Lavenda} alt="Lavenda" />
           </Link>
 
-          <InformationProjectContainer className="Information-project">
-            <TitleProject className="title-project">
+          <InformationProjectContainer id="Information-project">
+            <TitleProject id="title-project">
               Project 1 <br />
               Lavenda-Art
             </TitleProject>
-            <ParagraphProject className="paragraph-project">
+            <ParagraphProject id="paragraph-project">
               Prosjekte er en konseptbutikk på nett designet i Figma. Siden er
               laget med tanke på salg av lavendelprodukter. Designet har
               harmoniske farger, brukervennlig navigasjon og en moderne struktur
               som fremhever den naturlige karakteren til produktene.
             </ParagraphProject>
-            <IconsContainerProject className="Icons-container">
-              <LinksContainerIcons className="Links-containerIcons">
-                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
+            <IconsContainerProject id="Icons-container">
+              <LinksContainerIcons id="Links-containerIcons">
+                <ParagraphIconsLinks id="LagetMeds">
+                  Laget med:
+                </ParagraphIconsLinks>
                 <ContainerIconsLinks>
-                  <IconImageProject
-                    className="Icons"
-                    src={IconFigma}
-                    alt="Figma"
-                  />
+                  <IconImageProject id="Icons" src={IconFigma} alt="Figma" />
                 </ContainerIconsLinks>
               </LinksContainerIcons>
-              <LinksContainerIcons className="Links-containerIcons">
+              <LinksContainerIcons id="Links-containerIcons">
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
-                <ContainerIconsLinks>
-                  <ButtonLinks id="Button-header">
+                <ContainerIconsLinks id="ButtonContainer">
+                  <ButtonLinks id="Button">
                     <LinkGitLive
                       href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1"
                       target="_blank"
                     >
-                      <p>Figma</p>
+                      <p id="TitleButtonLinks">Figma</p>
                     </LinkGitLive>
                   </ButtonLinks>
-                  <ButtonLinks id="Button-header">
+                  <ButtonLinks id="Button">
                     <LinkGitLive
                       href="https://www.figma.com/proto/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=1-144&t=x4vijPfQ1caeBFYa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
                       target="_blank"
                     >
-                      <p>Live</p>
+                      <p id="TitleButtonLinks">Live</p>
                     </LinkGitLive>
                   </ButtonLinks>
                   {/* <Link href="https://www.figma.com/design/C0ZEPPAKgMSvHtZ3RHsjcN/Assignment-4%3A-Adding-a-Carousel-to-our-site?node-id=0-1&t=XANvlzWFNnBc32YS-1">
@@ -259,54 +257,52 @@ export default function Projects() {
           </InformationProjectContainer>
         </ProjectContainer>
 
-        <ProjectContainer className="Project-con" id="Countries">
+        <ProjectContainer id="Project-con" className="Countries">
           <Link
             href="https://malgorzata-b.github.io/Oppgave-API-/"
             target="_blank"
           >
-            <ImgProject className="ImgProject" src={MapApi} alt="Countries" />
+            <ImgProject id="ImgProject" src={MapApi} alt="Countries" />
           </Link>
 
-          <InformationProjectContainer className="Information-project">
-            <TitleProject className="title-project">
+          <InformationProjectContainer id="Information-project">
+            <TitleProject id="title-project">
               Project 2 <br />
               Countries - API
             </TitleProject>
-            <ParagraphProject className="paragraph-project">
+            <ParagraphProject id="paragraph-project">
               Prosjektet er en app laget med JavaScript som bruker data fra et
               API. Den lar brukere se informasjon om land, som flagg, befolkning
               og regioner, med responsivt design i HTML og CSS.
             </ParagraphProject>
-            <IconsContainerProject className="Icons-container">
-              <IconsContainerTools className="Icons-container-tools">
-                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
-                <ContainerIconsLinks>
-                  <IconImageProject className="Icons" src={IconJS} alt="JS" />
-                  <IconImageProject
-                    className="Icons"
-                    src={IconHTML}
-                    alt="HTML"
-                  />
-                  <IconImageProject className="Icons" src={IconCSS} alt="CSS" />{" "}
+            <IconsContainerProject id="Icons-container">
+              <IconsContainerTools id="Icons-container-tools">
+                <ParagraphIconsLinks id="LagetMed">
+                  Laget med:
+                </ParagraphIconsLinks>
+                <ContainerIconsLinks id="containerIconsTools">
+                  <IconImageProject id="Icons" src={IconJS} alt="JS" />
+                  <IconImageProject id="Icons" src={IconHTML} alt="HTML" />
+                  <IconImageProject id="Icons" src={IconCSS} alt="CSS" />{" "}
                 </ContainerIconsLinks>
               </IconsContainerTools>
-              <LinksContainerIcons className="Links-containerIcons">
+              <LinksContainerIcons id="Links-containerIcons">
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
-                <ContainerIconsLinks>
-                  <ButtonLinks id="Button-header">
+                <ContainerIconsLinks id="ButtonContainer">
+                  <ButtonLinks id="Button">
                     <LinkGitLive
                       href="https://github.com/Malgorzata-b/Oppgave-API-"
                       target="_blank"
                     >
-                      <p>GitHub</p>
+                      <p id="TitleButtonLinks">GitHub</p>
                     </LinkGitLive>
                   </ButtonLinks>
-                  <ButtonLinks id="Button-header">
+                  <ButtonLinks id="Button">
                     <LinkGitLive
                       href="https://malgorzata-b.github.io/Oppgave-API-/"
                       target="_blank"
                     >
-                      <p>Live</p>
+                      <p id="TitleButtonLinks">Live</p>
                     </LinkGitLive>
                   </ButtonLinks>
 
@@ -330,62 +326,52 @@ export default function Projects() {
           </InformationProjectContainer>
         </ProjectContainer>
       </ContainerProjects>
-      <ContainerProjects className="ØnskelisterProject-Container">
-        <ProjectContainer className="Project-con" id="Ønskelister">
+      <ContainerProjects id="ØnskelisterProject-Container">
+        <ProjectContainer id="Project-con" className="Ønskelister">
           <Link
             href="https://malgorzata-b.github.io/Jule-React/"
             target="_blank"
           >
-            <ImgProject
-              className="ImgProject"
-              src={ReactJule}
-              alt="Ønskelister"
-            />
+            <ImgProject id="ImgProject" src={ReactJule} alt="Ønskelister" />
           </Link>
 
-          <InformationProjectContainer className="Information-project">
-            <TitleProject className="title-project">
+          <InformationProjectContainer id="Information-project">
+            <TitleProject id="title-project">
               Project 3 <br /> Ønskelister
             </TitleProject>
-            <ParagraphProject className="paragraph-project">
+            <ParagraphProject id="paragraph-project">
               Dette prosjektet er en app laget med React. Den lar brukere lage
               og organisere ønskelister. HTML og CSS er brukt for å lage et
               responsivt design.
             </ParagraphProject>
-            <IconsContainerProject className="Icons-container">
-              <IconsContainerTools className="Icons-container-tools">
-                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
-                <ContainerIconsLinks>
-                  <IconImageProject
-                    className="Icons"
-                    src={IconReact}
-                    alt="React"
-                  />
-                  <IconImageProject
-                    className="Icons"
-                    src={IconHTML}
-                    alt="HTML"
-                  />
-                  <IconImageProject className="Icons" src={IconCSS} alt="CSS" />
+            <IconsContainerProject id="Icons-container">
+              <IconsContainerTools id="Icons-container-tools">
+                <ParagraphIconsLinks id="LagetMed">
+                  Laget med:
+                </ParagraphIconsLinks>
+                <ContainerIconsLinks id="containerIconsTools">
+                  <IconImageProject id="Icons" src={IconReact} alt="React" />
+                  <IconImageProject id="Icons" src={IconHTML} alt="HTML" />
+                  <IconImageProject id="Icons" src={IconCSS} alt="CSS" />
                 </ContainerIconsLinks>
               </IconsContainerTools>
-              <LinksContainerIcons className="Links-containerIcons">
+              <LinksContainerIcons id="Links-containerIcons">
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
-                <ContainerIconsLinks>
-                  <ButtonLinks id="Button-header">
+                <ContainerIconsLinks id="ButtonContainer">
+                  <ButtonLinks id="Button">
                     <LinkGitLive
                       href="https://github.com/Malgorzata-b/Jule-React"
                       target="_blank"
                     >
-                      <p>GitHub</p>
+                      <p id="TitleButtonLinks">GitHub</p>
                     </LinkGitLive>
                   </ButtonLinks>
-                  <ButtonLinks id="Button-header">
+                  <ButtonLinks id="Button">
                     <LinkGitLive
                       href="https://malgorzata-b.github.io/Jule-React/"
                       target="_blank"
                     >
-                      <p>Live</p>
+                      <p id="TitleButtonLinks">Live</p>
                     </LinkGitLive>
                   </ButtonLinks>
 
@@ -409,42 +395,44 @@ export default function Projects() {
           </InformationProjectContainer>
         </ProjectContainer>
       </ContainerProjects>
-      <ContainerProjects className="Container-Projects">
-        <ProjectContainer className="Project-con" id="MySQL-Project">
+      <ContainerProjects id="Container-Projects">
+        <ProjectContainer id="Project-con" className="MySQL-Project">
           <Link href={MySQLProject} target="_blank">
-            <ImgProject
-              className="ImgProject"
-              src={MySQLImage}
-              alt="MySQL-Project"
-            />
+            <ImgProject id="ImgProject" src={MySQLImage} alt="MySQL-Project" />
           </Link>
-          <InformationProjectContainer className="Information-project">
-            <TitleProject className="title-project">
+          <InformationProjectContainer id="Information-project">
+            <TitleProject id="title-project">
               Project 4 <br />
               MySQL
             </TitleProject>
-            <ParagraphProject className="paragraph-project">
+            <ParagraphProject id="paragraph-project">
               Dette prosjektet bruker MySQL for å analysere Airbnb-data fra New
               York. Det involverer oppretting av flere tabeller og bruk av ulike
               funksjoner for databehandling.
             </ParagraphProject>
-            <IconsContainerProject className="Icons-container MySQLContainer">
-              <LinksContainerIcons className="Links-containerIcons">
-                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
+            <IconsContainerProject
+              id="Icons-container"
+              className=" MySQLContainer"
+            >
+              <LinksContainerIcons id="Links-containerIcons">
+                <ParagraphIconsLinks id="LagetMed">
+                  Laget med:
+                </ParagraphIconsLinks>
                 <ContainerIconsLinks>
                   <GitHubMySQLIcons
-                    className="Icons MySQLIcon"
+                    id="Icons"
+                    className=" MySQLIcon"
                     src={IconMySQL}
                     alt="MySQL"
                   />
                 </ContainerIconsLinks>
               </LinksContainerIcons>
-              <LinksContainerIcons className="Links-containerIcons">
+              <LinksContainerIcons id="Links-containerIcons">
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
                 <ContainerIconsLinks>
-                  <ButtonLinks id="Button-header">
+                  <ButtonLinks id="Button">
                     <LinkGitLive href={MySQLProject} target="_blank">
-                      <p>Live</p>
+                      <p id="TitleButtonLinks">Live</p>
                     </LinkGitLive>
                   </ButtonLinks>
                   {/* <Link href={MySQLProject}>
@@ -459,53 +447,51 @@ export default function Projects() {
             </IconsContainerProject>
           </InformationProjectContainer>
         </ProjectContainer>
-        <ProjectContainer className="Project-con" id="Chess">
+        <ProjectContainer id="Project-con" className="Chess">
           <Link
             href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/"
             target="_blank"
           >
-            <ImgProject className="ImgProject" src={Chess} alt="Chess" />
+            <ImgProject id="ImgProject" src={Chess} alt="Chess" />
           </Link>
 
-          <InformationProjectContainer className="Information-project">
-            <TitleProject className="title-project">
+          <InformationProjectContainer id="Information-project">
+            <TitleProject id="title-project">
               Project 5 <br /> Chess
             </TitleProject>
-            <ParagraphProject className="paragraph-project">
+            <ParagraphProject id="paragraph-project">
               Prosjektet går ut på å lage et sjakkbrett ved hjelp av JavaScript,
               HTML og CSS. DOM-manipulasjon ble brukt. Målet var å presentere de
               grunnleggende reglene i sjakk.
             </ParagraphProject>
-            <IconsContainerProject className="Icons-container">
-              <IconsContainerTools className="Icons-container-tools">
-                <ParagraphIconsLinks>Laget med:</ParagraphIconsLinks>
-                <ContainerIconsLinks>
-                  <IconImageProject className="Icons" src={IconJS} alt="JS" />
-                  <IconImageProject
-                    className="Icons"
-                    src={IconHTML}
-                    alt="HTML"
-                  />
-                  <IconImageProject className="Icons" src={IconCSS} alt="CSS" />{" "}
+            <IconsContainerProject id="Icons-container">
+              <IconsContainerTools id="Icons-container-tools">
+                <ParagraphIconsLinks id="LagetMed">
+                  Laget med:
+                </ParagraphIconsLinks>
+                <ContainerIconsLinks id="containerIconsTools">
+                  <IconImageProject id="Icons" src={IconJS} alt="JS" />
+                  <IconImageProject id="Icons" src={IconHTML} alt="HTML" />
+                  <IconImageProject id="Icons" src={IconCSS} alt="CSS" />{" "}
                 </ContainerIconsLinks>
               </IconsContainerTools>
-              <LinksContainerIcons className="Links-containerIcons">
+              <LinksContainerIcons id="Links-containerIcons">
                 {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
-                <ContainerIconsLinks>
-                  <ButtonLinks id="Button-header">
+                <ContainerIconsLinks id="ButtonContainer">
+                  <ButtonLinks id="Button">
                     <LinkGitLive
                       href="https://github.com/Malgorzata-b/DOM-Manipulation-Chess"
                       target="_blank"
                     >
-                      <p>GitHub</p>
+                      <p id="TitleButtonLinks">GitHub</p>
                     </LinkGitLive>
                   </ButtonLinks>
-                  <ButtonLinks id="Button-header">
+                  <ButtonLinks id="Button">
                     <LinkGitLive
                       href="https://malgorzata-b.github.io/DOM-Manipulation-Chess/"
                       target="_blank"
                     >
-                      <p>Live</p>
+                      <p id="TitleButtonLinks">Live</p>
                     </LinkGitLive>
                   </ButtonLinks>
 

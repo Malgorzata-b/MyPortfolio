@@ -55,7 +55,6 @@ const ImageContainerImg = styled.div`
   // border: 4px solid yellow;
   box-shadow: 4px 4px 8px var(--CaruselColorShadowLight);
   border-radius: 20px;
-  scroll-behavior: smooth;
   overflow: hidden;
 `;
 
@@ -74,7 +73,7 @@ const ButtonContainer = styled.div`
   gap: 1rem;
   background-color: transparent;
   // background-color: white;
-  width: 8rem;
+  max-width: 8rem;
   // border: 7px solid rgb(18, 26, 20);
 `;
 
@@ -151,19 +150,19 @@ const Description = styled.p`
 export default function About() {
   return (
     <>
-      <ImagesContainer className="Images-Container">
-        <ImageContainerProfil className="Image">
-          <ImageAurora className="Profil" src={Image4} alt="Aurora" />
+      <ImagesContainer id="Images-Container">
+        <ImageContainerProfil id="Image">
+          <ImageAurora id="Profil" src={Image4} alt="Aurora" />
         </ImageContainerProfil>
-        <CaruselContainer class="carousel-container">
-          <ImageContainerImg className="Image-Gallery">
+        <CaruselContainer id="carousel-container">
+          <ImageContainerImg id="Image-Gallery">
             <Image className="Photo" id="photo-1" src={Image1} alt="Image3" />
             <Image className="Photo" id="photo-2" src={Image2} alt="Image2" />
             <Image className="Photo" id="photo-3" src={Image3} alt="Image1" />
           </ImageContainerImg>
-          <ButtonContainer class="button-container">
+          <ButtonContainer id="button-container">
             <LinkButton
-              className="button"
+              id="buttonImage"
               onClick={() =>
                 document
                   .getElementById("photo-1")
@@ -172,7 +171,7 @@ export default function About() {
             />
 
             <LinkButton
-              className="button"
+              id="buttonImage"
               onClick={() =>
                 document
                   .getElementById("photo-2")
@@ -181,7 +180,7 @@ export default function About() {
             />
 
             <LinkButton
-              className="button"
+              id="buttonImage"
               onClick={() =>
                 document
                   .getElementById("photo-3")
@@ -190,40 +189,40 @@ export default function About() {
             />
           </ButtonContainer>
         </CaruselContainer>
-        <CompetencesContainer className="Competences">
-          <Paragraph>Jeg Kan: </Paragraph>
-          <IconContainer className="HTML">
-            <IconImage className="Icon" src={IconHTML} alt="HTML" />
+        <CompetencesContainer id="Competences">
+          <Paragraph id="CompetancesTitle">Jeg Kan: </Paragraph>
+          <IconContainer id="CompetencesIconContainer" className="HTML">
+            <IconImage id="Icon" src={IconHTML} alt="HTML" />
             <IconTitle id="Title-competences">HTML</IconTitle>
           </IconContainer>
-          <IconContainer className="CSS">
-            <IconImage className="Icon" src={IconCSS} alt="CSS" />
+          <IconContainer id="CompetencesIconContainer" className="CSS">
+            <IconImage id="Icon" src={IconCSS} alt="CSS" />
             <IconTitle id="Title-competences">CSS</IconTitle>
           </IconContainer>
-          <IconContainer className="FIGMA">
-            <IconImage className="Icon" src={IconFigma} alt="FIGMA" />
+          <IconContainer id="CompetencesIconContainer" className="FIGMA">
+            <IconImage id="Icon" src={IconFigma} alt="FIGMA" />
             <IconTitle id="Title-competences">Figma</IconTitle>
           </IconContainer>
-          <IconContainer className="JS">
-            <JSIconImage className="Icon" src={IconJS} alt="JS" />
+          <IconContainer id="CompetencesIconContainer" className="JS">
+            <JSIconImage id="Icon" src={IconJS} alt="JS" />
             <IconTitle id="Title-competences">JavaScript</IconTitle>
           </IconContainer>
-          <IconContainer className="REACT">
-            <IconImage className="Icon" src={IconReact} alt="REACT" />
+          <IconContainer id="CompetencesIconContainer" className="REACT">
+            <IconImage id="Icon" src={IconReact} alt="REACT" />
             <IconTitle id="Title-competences">React</IconTitle>
           </IconContainer>
-          <IconContainer className="Python ">
-            <IconImage className="Icon" src={IconPython} alt="Python" />
+          <IconContainer id="CompetencesIconContainer" className="Python ">
+            <IconImage id="Icon" src={IconPython} alt="Python" />
             <IconTitle id="Title-competences">Python</IconTitle>
           </IconContainer>
-          <IconContainer className="MySQL">
-            <IconImage className="Icon" src={IconMySQL} alt="MySQL" />
+          <IconContainer id="CompetencesIconContainer" className="MySQL">
+            <IconImage id="Icon" src={IconMySQL} alt="MySQL" />
             <IconTitle id="Title-competences">MySQL</IconTitle>
           </IconContainer>
         </CompetencesContainer>
       </ImagesContainer>
-      <AboutMeContainer className="AboutMe">
-        <Description className="Description">
+      <AboutMeContainer id="AboutMe">
+        <Description id="Description">
           Hei!
           <br />
           Jeg er Malgorzata og jeg er veldig spent på å starte min reise som

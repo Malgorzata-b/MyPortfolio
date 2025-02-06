@@ -78,24 +78,28 @@ export default function Header() {
     <>
       <ButtonContainer className="Button-container">
         <ButtonHeader id="Button-header">
-          <LinkGitCV href="https://github.com/Malgorzata-b" target="_blank">
+          <LinkGitCV
+            id="Links-header"
+            href="https://github.com/Malgorzata-b"
+            target="_blank"
+          >
             GitHub
           </LinkGitCV>
         </ButtonHeader>
         <ButtonHeader id="Button-header">
-          <LinkGitCV href={CV} target="_blank">
+          <LinkGitCV id="Links-header" href={CV} target="_blank">
             CV
           </LinkGitCV>
         </ButtonHeader>
       </ButtonContainer>
-      <ImageDots className="img-dots" src={Dots} alt="Dots" />
-      <WelcomeContainer className="Welcome-container">
+      <ImageDots id="img-dots" src={Dots} alt="Dots" />
+      <WelcomeContainer id="Welcome-container">
         <Title id="Title">Velkommen</Title>
-        <NameContainer id="Name">
+        <NameContainer>
           {/* <NameParagraph>Jeg heter</NameParagraph> */}
-          <NameParagraph>Malgorzata Bugajska</NameParagraph>
+          <NameParagraph id="Name">Malgorzata Bugajska</NameParagraph>
 
-          <NameParagraph>Frontend Utvikler</NameParagraph>
+          <NameParagraph id="Name">Frontend Utvikler</NameParagraph>
         </NameContainer>
       </WelcomeContainer>
     </>

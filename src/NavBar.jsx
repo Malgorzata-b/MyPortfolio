@@ -119,32 +119,44 @@ export default function Navbar() {
         <Header />
       </HeaderSection>
 
-      <NavBarSection id="Navbar">
-        <NavBarNavigation className="Navbar-container">
-          <NavBarButton onClick={() => scrollToSection(homeRef)}>
+      <NavBarSection id="Navbar-Section">
+        <NavBarNavigation id="Navbar-container">
+          <NavBarButton
+            id="ButtonNavBar"
+            onClick={() => scrollToSection(homeRef)}
+          >
             Hjem
           </NavBarButton>
 
-          <NavBarButton onClick={() => scrollToSection(aboutRef)}>
+          <NavBarButton
+            id="ButtonNavBar"
+            onClick={() => scrollToSection(aboutRef)}
+          >
             Om meg
           </NavBarButton>
 
-          <NavBarButton onClick={() => scrollToSection(projectsRef)}>
+          <NavBarButton
+            id="ButtonNavBar"
+            onClick={() => scrollToSection(projectsRef)}
+          >
             Prosjekter
           </NavBarButton>
 
-          <NavBarButton onClick={() => scrollToSection(contactRef)}>
+          <NavBarButton
+            id="ButtonNavBar"
+            onClick={() => scrollToSection(contactRef)}
+          >
             Kontakt
           </NavBarButton>
         </NavBarNavigation>
       </NavBarSection>
 
       <MainSection id="Information-container">
-        <AboutSection ref={aboutRef} className="About-container">
+        <AboutSection ref={aboutRef} id="About-container">
           <About />
         </AboutSection>
 
-        <ProjectsSection ref={projectsRef} className="Projects-container">
+        <ProjectsSection ref={projectsRef} id="Projects-container">
           <Projects />
         </ProjectsSection>
       </MainSection>

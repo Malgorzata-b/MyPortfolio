@@ -67,13 +67,13 @@ const ContainerIconsLinks = styled.div`
   gap: 2rem;
 `;
 
-const ParagraphIconsLinks = styled.p`
-  font-size: 2rem;
-  text-align: center;
-  text-decoration: underline;
-  font-family: "Playfair Display", serif;
-  text-shadow: 0px 3px 3px var(--ShadowButton);
-`;
+// const ParagraphIconsLinks = styled.p`
+//   font-size: 2rem;
+//   text-align: center;
+//   text-decoration: underline;
+//   font-family: "Playfair Display", serif;
+//   text-shadow: 0px 3px 3px var(--ShadowButton);
+// `;
 
 const GitHubIcons = styled.img`
   height: 4rem;
@@ -94,33 +94,32 @@ export default function Contact() {
     <ContactContainer className="Contact-container">
       <LogoNameContainer className="Logo-name">
         <CircleContainer id="Circle"></CircleContainer>
-        <ParagraphContact>Malgorzata Bugajska</ParagraphContact>
+        <ParagraphContact id="TitleContact">
+          Malgorzata Bugajska
+        </ParagraphContact>
       </LogoNameContainer>
-      <InfocontactContainer className="Info-Contact">
-        <ParagraphContact>
+      <InfocontactContainer id="Info-Contact">
+        <ParagraphContact id="TitleContact">
           e - post: <strong>bugajska.malgorzat5@gmail.com</strong>
         </ParagraphContact>
-        <ParagraphContact>
+        <ParagraphContact id="TitleContact">
           mobiltelefon: <strong>(+47) 486 53 587</strong>
         </ParagraphContact>
       </InfocontactContainer>
 
-      <LinksContactContainer className="Links-Contact">
+      <LinksContactContainer>
         {/* <ParagraphIconsLinks>Linker til:</ParagraphIconsLinks> */}
-        <ContainerIconsLinks>
+        <ContainerIconsLinks id="Links-Contact">
           <Link href="https://github.com/Malgorzata-b">
             <GitHubIcons
+              id="Icons"
               className="Icons GitHubIcon"
               src={IconGitHub}
               alt="GitHub"
             />
           </Link>
           <Link href="https://www.linkedin.com/in/malgorzata-bugajska/">
-            <IconImageProject
-              className="Icons"
-              src={IconLinkedin}
-              alt="Linkedin"
-            />
+            <IconImageProject id="Icons" src={IconLinkedin} alt="Linkedin" />
           </Link>
         </ContainerIconsLinks>
       </LinksContactContainer>
