@@ -46,8 +46,9 @@ const ImgProject = styled.img`
 const InformationProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2rem;
   padding-right: 3vw;
+  max-width: 50rem;
 `;
 
 const TitleProject = styled.h1`
@@ -61,6 +62,7 @@ const ParagraphProject = styled.p`
   font-size: 2rem;
   text-align: center;
   padding-right: 1.2vw;
+  max-width: 45rem;
 `;
 
 const IconsContainerProject = styled.div`

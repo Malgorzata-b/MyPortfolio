@@ -60,6 +60,16 @@ border: 2px solid red; */
   padding-left: 3vw;
 }
 
+.Countries {
+  padding: 3vh 0;
+  padding-left: 3vw;
+}
+
+.Chess {
+  padding: 3vh 0;
+  padding-left: 3vw;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -255,6 +265,16 @@ border: 2px solid red; */
     padding: 0 0;
     padding-left: 0;
   }
+
+  .Countries {
+    padding: 0 0;
+    padding-left: 0;
+  }
+
+  .Chess {
+    padding: 0 0;
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 1980px) {
@@ -307,6 +327,16 @@ border: 2px solid red; */
   }
 
   .Ønskelister {
+    padding: 0 0;
+    padding-left: 0;
+  }
+
+  .Countries {
+    padding: 0 0;
+    padding-left: 0;
+  }
+
+  .Chess {
     padding: 0 0;
     padding-left: 0;
   }
