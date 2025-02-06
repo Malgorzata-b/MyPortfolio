@@ -218,8 +218,9 @@ Error generating stack: `+i.message+`
 `,tl=F.div`
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2rem;
   padding-right: 3vw;
+  max-width: 50rem;
 `,nl=F.h1`
   text-align: center;
   font-size: 2.5rem;
@@ -229,6 +230,7 @@ Error generating stack: `+i.message+`
   font-size: 2rem;
   text-align: center;
   padding-right: 1.2vw;
+  max-width: 45rem;
 `,ll=F.div`
   display: flex;
   justify-content: space-around;
