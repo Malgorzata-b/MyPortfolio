@@ -277,7 +277,7 @@ border: 2px solid red; */
   }
 }
 
-@media only screen and (max-width: 1980px) {
+@media only screen and (max-width: 2160px) {
   #img-dots {
     height: 24rem;
     top: 18%;
@@ -339,5 +339,114 @@ border: 2px solid red; */
   .Chess {
     padding: 0 0;
     padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  #Button-header {
+    width: 6rem;
+    height: 3rem;
+  }
+
+  #Links-header {
+    font-size: 1rem;
+  }
+
+  #img-dots {
+    height: 18rem;
+    top: 18%;
+    left: -10%;
+  }
+
+  #Welcome-container {
+    width: 25rem;
+    left: 10%;
+    top: -25%;
+  }
+
+  #Container-Projects {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  #Welcome-container {
+    width: 25rem;
+    left: 13%;
+    top: -25%;
+  }
+
+  #About-container {
+    flex-direction: column;
+  }
+
+  #Description {
+    font-size: 1rem;
+    max-width: 25rem;
+  }
+
+  #ImgProject {
+    max-width: 10rem;
+    height: 13rem;
+  }
+
+  #Information-project {
+    max-width: 20rem;
+    gap: 1rem;
+  }
+
+  #Circle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  #Info-Contact {
+    gap: 0.8rem;
+  }
+
+  #TitleContact {
+    font-size: 0.8rem;
+  }
+
+  #Links-Contact {
+    gap: 0.5rem;
+  }
+
+  #Icons {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  #Contact-container {
+    margin-left: 2vw;
+  }
+
+  #Icons-container {
+    gap: 1.5rem;
+  }
+
+  #containerIconsTools {
+    gap: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #Info-Contact {
+    gap: 0.5rem;
+  }
+
+  #Links-Contact {
+    gap: 0.3rem;
+  }
+
+  #Contact-container {
+    margin-left: 0vw;
+  }
+
+  #Info-Contact {
+    gap: 1rem;
+    margin: 1vh 10vw;
+    padding: 0vh 0vw;
   }
 }

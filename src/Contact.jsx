@@ -91,7 +91,7 @@ const Link = styled.a``;
 
 export default function Contact() {
   return (
-    <ContactContainer className="Contact-container">
+    <ContactContainer id="Contact-container">
       <LogoNameContainer className="Logo-name">
         <CircleContainer id="Circle"></CircleContainer>
         <ParagraphContact id="TitleContact">
