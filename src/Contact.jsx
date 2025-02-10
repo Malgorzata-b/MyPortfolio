@@ -92,7 +92,7 @@ const Link = styled.a``;
 export default function Contact() {
   return (
     <ContactContainer id="Contact-container">
-      <LogoNameContainer className="Logo-name">
+      <LogoNameContainer id="Logo-name">
         <CircleContainer id="Circle"></CircleContainer>
         <ParagraphContact id="TitleContact">
           Malgorzata Bugajska
