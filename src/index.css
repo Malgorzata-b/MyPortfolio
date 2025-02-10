@@ -619,3 +619,61 @@ border: 2px solid red; */
     gap: 0.3rem;
   }
 }
+
+@media only screen and (max-width: 430px) {
+  #img-dots {
+    left: -7%;
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+
+  #Welcome-container {
+    margin: 0 7vw;
+    left: -2%;
+  }
+
+  #Project-con {
+    max-width: 23rem;
+  }
+
+  #paragraph-project {
+    max-width: 10rem;
+    margin-left: 4vw;
+  }
+
+  #Info-Contact {
+    gap: 0.4rem;
+    margin: 1vh 2.5vw;
+  }
+
+  #Links-Contact {
+    gap: 0.3rem;
+  }
+
+  #TitleButtonLinks {
+    font-size: 0.48rem;
+  }
+
+  #Button {
+    width: 2.2rem;
+    height: 1.3rem;
+    border: 2px solid black;
+  }
+
+  #ButtonContainer {
+    gap: 0.2rem;
+  }
+
+  #Circle {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  #Logo-name {
+    gap: 0.3rem;
+  }
+
+  #Images-Container {
+    padding: 2vh 0vw;
+  }
+}
