@@ -620,7 +620,7 @@ border: 2px solid red; */
   #ImgProject {
     max-width: 8rem;
     height: 11rem;
-    margin-left: 5vw;
+    margin-left: 4vw;
   }
 
   #ButtonContainer {
@@ -634,12 +634,12 @@ border: 2px solid red; */
 
   #LagetMed {
     font-size: 0.6rem;
-    width: 3.5rem;
+    width: 4rem;
   }
 
   #LagetMeds {
     font-size: 0.6rem;
-    width: 3.5rem;
+    width: 4rem;
   }
 }
 
