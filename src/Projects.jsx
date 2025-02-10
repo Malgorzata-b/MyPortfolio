@@ -113,18 +113,12 @@ const IconsContainerTools = styled.div`
 const GitHubMySQLIcons = styled.img`
   height: 4rem;
   width: 4rem;
-  border: 2px solid black;
   box-shadow: 0px 0px 15px 3px var(--black);
-
-   &:hover {
-    background-color: var(--ShadowButton);
-    color: var(--dark);
-    box-shadow: 0px 0px 26px 0px var(--ShadowButton);
 `;
 
 // const JSIconImage = styled.img`
-//   width: 4rem;
-//   height: 4rem;
+//   width: 4.5rem;
+//   height: 4.5rem;
 //   border-radius: 50%;
 // `;
 const Link = styled.a``;
@@ -135,6 +129,7 @@ const ParagraphIconsLinks = styled.p`
   text-decoration: underline;
   font-family: "Playfair Display", serif;
   text-shadow: 0px 3px 3px var(--ShadowButton);
+  width: 9.06rem;
 `;
 
 const ContainerIconsLinks = styled.div`
