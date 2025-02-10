@@ -574,7 +574,7 @@ border: 2px solid red; */
 
   #paragraph-project {
     max-width: 13rem;
-    margin-left: 3vw;
+    margin-left: 4vw;
   }
 
   #img-dots {
@@ -620,7 +620,7 @@ border: 2px solid red; */
   #ImgProject {
     max-width: 8rem;
     height: 11rem;
-    margin-left: 10vw;
+    margin-left: 5vw;
   }
 
   #ButtonContainer {
@@ -634,12 +634,12 @@ border: 2px solid red; */
 
   #LagetMed {
     font-size: 0.6rem;
-    width: 3rem;
+    width: 3.5rem;
   }
 
   #LagetMeds {
     font-size: 0.6rem;
-    width: 3rem;
+    width: 3.5rem;
   }
 }
 
