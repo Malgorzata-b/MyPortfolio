@@ -319,11 +319,6 @@ border: 2px solid red; */
     height: 1rem;
   }
 
-  #ImgProject {
-    max-width: 15rem;
-    height: 18rem;
-  }
-
   .Ønskelister {
     padding: 0 0;
     padding-left: 0;
@@ -574,12 +569,12 @@ border: 2px solid red; */
 
 @media only screen and (max-width: 475px) {
   #Project-con {
-    max-width: 25rem;
+    max-width: 26rem;
   }
 
   #paragraph-project {
     max-width: 13rem;
-    margin-left: 4vw;
+    margin-left: 3vw;
   }
 
   #img-dots {
@@ -621,6 +616,31 @@ border: 2px solid red; */
   #ButtonContainer {
     gap: 0.3rem;
   }
+
+  #ImgProject {
+    max-width: 8rem;
+    height: 11rem;
+    margin-left: 10vw;
+  }
+
+  #ButtonContainer {
+    gap: 0.2rem;
+  }
+
+  #containerIconsTools {
+    gap: 0.4rem;
+    padding-right: 0.5rem;
+  }
+
+  #LagetMed {
+    font-size: 0.6rem;
+    width: 3rem;
+  }
+
+  #LagetMeds {
+    font-size: 0.6rem;
+    width: 3rem;
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -636,7 +656,7 @@ border: 2px solid red; */
   }
 
   #Project-con {
-    max-width: 23rem;
+    max-width: 24rem;
   }
 
   #paragraph-project {
