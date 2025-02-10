@@ -260,19 +260,14 @@ Error generating stack: `+i.message+`
 `,Vm=F.img`
   height: 4rem;
   width: 4rem;
-  border: 2px solid black;
   box-shadow: 0px 0px 15px 3px var(--black);
-
-   &:hover {
-    background-color: var(--ShadowButton);
-    color: var(--dark);
-    box-shadow: 0px 0px 26px 0px var(--ShadowButton);
 `,il=F.a``,ol=F.p`
   font-size: 2rem;
   text-align: center;
   text-decoration: underline;
   font-family: "Playfair Display", serif;
   text-shadow: 0px 3px 3px var(--ShadowButton);
+  width: 9.06rem;
 `,zt=F.div`
   display: flex;
   justify-content: center;
